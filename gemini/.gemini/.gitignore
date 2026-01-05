@@ -1,0 +1,23 @@
+# Temporary files
+tmp/
+*.log
+*.orig
+
+# Credentials and secrets
+google_accounts.json
+oauth_creds.json
+installation_id
+
+# State, cache, and session history
+state.json
+history/
+antigravity-browser-profile/
+antigravity/brain/
+antigravity/browser_recordings/
+antigravity/code_tracker/
+antigravity/context_state/
+antigravity/conversations/
+antigravity/implicit/
+
+# System files
+.DS_Store

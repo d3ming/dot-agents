@@ -1,0 +1,65 @@
+# dot-agents .gitignore
+# Strategy: DENY by default for runtime/secrets, ALLOW specific tracked files
+
+# =============================================================================
+# ARCHIVE (full backups, never commit)
+# =============================================================================
+/archive/
+
+# =============================================================================
+# CLAUDE — Runtime / Secrets
+# =============================================================================
+claude/.claude/projects/
+claude/.claude/statsig/
+claude/.claude/plugins/
+claude/.claude/debug/
+claude/.claude/plans/
+claude/.claude/.claude/
+claude/.claude/todos/
+claude/.claude/file-history/
+claude/.claude/session-env/
+claude/.claude/shell-snapshots/
+claude/.claude/ide/
+claude/.claude/claude-reference-guide.md
+
+# =============================================================================
+# CODEX — Runtime / Secrets
+# =============================================================================
+codex/.codex/sessions/
+codex/.codex/shell_snapshots/
+codex/.codex/log/
+codex/.codex/tmp/
+codex/.codex/policy/
+codex/.codex/internal_storage.json
+codex/.codex/version.json
+codex/.codex/config.toml
+codex/.codex/config.bak.toml
+codex/.codex/auth.json
+codex/.codex/history.jsonl
+codex/.codex/skills/.system/
+
+# =============================================================================
+# GEMINI — Runtime / Secrets
+# =============================================================================
+gemini/.gemini/oauth_creds.json
+gemini/.gemini/google_accounts.json
+gemini/.gemini/installation_id
+gemini/.gemini/state.json
+gemini/.gemini/history/
+gemini/.gemini/antigravity/
+gemini/.gemini/antigravity-browser-profile/
+gemini/.gemini/extensions/
+gemini/.gemini/tmp/
+gemini/.gemini/*.orig
+gemini/.gemini/*.bak*
+
+# =============================================================================
+# GENERAL
+# =============================================================================
+.DS_Store
+*.log
+*.jsonl
+
+# User Tmp Notes
+.notes
+auth.json

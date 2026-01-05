@@ -1,0 +1,16 @@
+# User Authentication & Secrets
+auth.json
+
+# Session History & Logs
+history.jsonl
+sessions/
+log/
+shell_snapshots/
+
+# Internal State & Temporary Files
+internal_storage.json
+tmp/
+
+# Backups
+*.bak
+*.bak.toml

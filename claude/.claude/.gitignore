@@ -1,0 +1,26 @@
+# Session and runtime data
+debug/
+history.jsonl
+file-history/
+projects/
+shell-snapshots/
+todos/
+plans/
+session-env/
+ide/
+
+# Nested .claude folder (project settings when working in ~/.claude)
+.claude/
+
+# Analytics
+statsig/
+
+# Plugins runtime data (keep configuration)
+plugins/marketplaces/
+plugins/known_marketplaces.json
+
+# Local overrides (uncomment to track your local settings)
+# .claude/settings.local.json
+
+# OS files
+.DS_Store
