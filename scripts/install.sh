@@ -74,12 +74,15 @@ echo "🔗 Installing symlinks..."
 cd "$PROJECT_DIR"
 stow -v -t ~ claude codex
 
-# Gemini setup (always ensure these links are correct)
-echo "🔗 linking gemini configs..."
+# Gemini setup (using copies because Gemini CLI handles symlinks poorly)
+echo "📂 Copying gemini configs..."
 mkdir -p ~/.gemini
-ln -sf "$PROJECT_DIR/shared/MASTER-AGENTS.md" ~/.gemini/GEMINI.md
-ln -sf "$PROJECT_DIR/gemini/.gemini/settings.json" ~/.gemini/settings.json
-ln -sf "$PROJECT_DIR/gemini/.gemini/commands" ~/.gemini/commands
+rm -f ~/.gemini/GEMINI.md ~/.gemini/settings.json
+cp "$PROJECT_DIR/gemini/.gemini/GEMINI.md" ~/.gemini/GEMINI.md
+cp "$PROJECT_DIR/gemini/.gemini/settings.json" ~/.gemini/settings.json
+# Ensure clean directory state to avoid nesting (e.g. commands/commands/)
+rm -rf ~/.gemini/commands
+cp -R "$PROJECT_DIR/gemini/.gemini/commands" ~/.gemini/
 
 if [ "$SHOULD_RESTORE" = true ]; then
     echo ""
@@ -115,7 +118,7 @@ if [ "$SHOULD_RESTORE" = true ]; then
     # Gemini - Restore directory content if we moved it
     if [ -d "${LATEST_ARCHIVE}gemini" ]; then
         # Restore contents from archive to the new real directory
-        # We carefully copy back history/cache but NOT the tracked files we just symlinked
+        # We carefully copy back history/cache but NOT the tracked files we just copied
         echo "  Restoring Gemini runtime files..."
         rsync -a --exclude='GEMINI.md' --exclude='settings.json' --exclude='commands' "${LATEST_ARCHIVE}gemini/" ~/.gemini/
         echo "  ✅ Gemini runtime restored"
@@ -127,6 +130,8 @@ echo "✅ Installation complete!"
 echo ""
 echo "Verify with:"
 echo "  ls -la ~/.claude ~/.codex ~/.gemini"
-echo "  readlink ~/.claude"
+echo ""
+echo "Note: Gemini configs are now REAL FILES (not symlinks) to improve CLI compatibility."
+echo "Use ./scripts/sync-to-repo.sh to save changes (like memories) back to the repo."
 echo ""
 echo "Test your CLI tools to ensure settings are picked up."

@@ -5,5 +5,5 @@ Use the shared git-commit skill instructions. If args provided, treat as scope/i
 
 Args: {{args}}
 
-@{/Users/dongming/projects/dot-agents/shared/skills/git-commit/SKILL.md}
+@{master/skills/git-commit/SKILL.md}
 """

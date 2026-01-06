@@ -10,12 +10,10 @@ cd "$PROJECT_DIR"
 # Remove existing files/symlinks
 rm -f claude/.claude/CLAUDE.md
 rm -f codex/.codex/AGENTS.md
-rm -f gemini/.gemini/GEMINI.md
 
 # Create relative symlinks
-ln -s ../../shared/AGENTS.md claude/.claude/CLAUDE.md
-ln -s ../../shared/AGENTS.md codex/.codex/AGENTS.md
-ln -s ../../shared/AGENTS.md gemini/.gemini/GEMINI.md
+ln -s ../../master/AGENTS.md claude/.claude/CLAUDE.md
+ln -s ../../master/AGENTS.md codex/.codex/AGENTS.md
 
 echo "✅ Created shared doc symlinks:"
-ls -la claude/.claude/CLAUDE.md codex/.codex/AGENTS.md gemini/.gemini/GEMINI.md
+ls -la claude/.claude/CLAUDE.md codex/.codex/AGENTS.md

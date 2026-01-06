@@ -8,6 +8,16 @@ BACKUP_DIR="$PROJECT_DIR/archive/$(date +%Y%m%d-%H%M%S)"
 mkdir -p "$BACKUP_DIR"
 echo "📦 Backup dir: $BACKUP_DIR"
 
+# Sync managed Gemini configs back to repo before backup
+if [ -f "$SCRIPT_DIR/sync-to-repo.sh" ]; then
+    # Only run sync if strictly interactive
+    if [ -t 0 ]; then
+        bash "$SCRIPT_DIR/sync-to-repo.sh"
+    else
+        echo "Skipping interactive sync (not in a terminal)"
+    fi
+fi
+
 # Full copy of each config directory
 cp -R ~/.claude "$BACKUP_DIR/claude"
 echo "✅ ~/.claude → $BACKUP_DIR/claude"

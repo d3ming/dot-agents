@@ -94,12 +94,12 @@ A practical repo layout that maps cleanly to all three ecosystems:
 * `AGENTS.md` (Codex instructions) ([OpenAI Developers][11])
 * `CLAUDE.md` (Claude instructions) ([Anthropic][7])
 * `GEMINI.md` (Gemini instructions) ([Google Codelabs][15])
-* `shared/`
+* `master/`
 
-  * `shared/protocols/` (team-wide engineering rules, review rules, security rules)
-  * `shared/skills/` (portable skills in Agent Skills format) ([GitHub][4])
-  * `shared/commands/` (prompt templates that can be rendered into each agent’s command format)
-  * `shared/mcp/` (MCP server configs, manifests, env templates)
+  * `master/protocols/` (team-wide engineering rules, review rules, security rules)
+  * `master/skills/` (portable skills in Agent Skills format) ([GitHub][4])
+  * `master/commands/` (prompt templates that can be rendered into each agent’s command format)
+  * `master/mcp/` (MCP server configs, manifests, env templates)
 
 Key design goal: treat project instruction files as thin “indexes” that point to canonical shared docs, rather than duplicating content.
 
@@ -205,7 +205,7 @@ Generate high-signal unit tests for the changed code, aligned to repo testing co
 
 ### 6.2 Operational approach
 
-* `shared/MASTER-AGENTS.md` as source-of-truth policy (security, style, testing, review).
+* `master/AGENTS.md` as source-of-truth policy (security, style, testing, review).
 * Keep project files (AGENTS.md / CLAUDE.md / GEMINI.md) thin and stable; they should primarily:
 
   1. define local exceptions
@@ -264,7 +264,7 @@ Star counts below are approximate and can drift; figures are as observed around 
 
 If you want the fewest moving parts with strong leverage:
 
-1. Put core engineering policy in `shared/MASTER-AGENTS.md`.
+1. Put core engineering policy in `master/AGENTS.md`.
 2. In every repo, add:
 
    * `AGENTS.md` (Codex) with “review guidelines” + local constraints. ([OpenAI Developers][28])

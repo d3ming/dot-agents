@@ -65,10 +65,10 @@ rsync -av \
   "${LATEST_ARCHIVE}gemini/" "$PROJECT_DIR/gemini/.gemini/"
 echo "✅ Gemini"
 
-# Create shared AGENTS.md
-mkdir -p "$PROJECT_DIR/shared"
-cp "${LATEST_ARCHIVE}codex/AGENTS.md" "$PROJECT_DIR/shared/AGENTS.md"
-echo "✅ Shared AGENTS.md"
+# Create master AGENTS.md
+mkdir -p "$PROJECT_DIR/master"
+cp "${LATEST_ARCHIVE}codex/AGENTS.md" "$PROJECT_DIR/master/AGENTS.md"
+echo "✅ Master AGENTS.md"
 
 echo ""
 echo "📊 Repo structure sizes:"

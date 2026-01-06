@@ -1,4 +1,4 @@
-# MASTER-AGENTS.MD: common agent rules for all AI agents.
+# AGENTS.MD: common agent rules for all AI agents.
 
 Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
