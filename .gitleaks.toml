@@ -1,0 +1,18 @@
+# Gitleaks configuration for dot-agents
+# Documentation: https://github.com/gitleaks/gitleaks
+
+[allowlist]
+description = "Ignore runtime and archive directories"
+paths = [
+    '''archive/''',
+    '''claude/.claude/file-history/''',
+    '''claude/.claude/session-env/''',
+    '''codex/.codex/sessions/''',
+    '''gemini/.gemini/history/''',
+    '''\.docs/'''
+]
+
+# You can add specific fingerprint allowlists below if you encounter false positives
+# fingerprints = [
+#     "f9889d81d4a0695b180064f775f0a058"
+# ]
