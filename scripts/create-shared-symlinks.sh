@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# create-shared-symlinks.sh — Link CLAUDE.md/AGENTS.md/GEMINI.md to shared/AGENTS.md
+# create-shared-symlinks.sh — Link CLAUDE.md/AGENTS.md/GEMINI.md to master/AGENTS.md
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
