@@ -21,6 +21,7 @@ claude/.claude/session-env/
 claude/.claude/shell-snapshots/
 claude/.claude/ide/
 claude/.claude/claude-reference-guide.md
+claude/.claude/stats-cache.json
 
 # =============================================================================
 # CODEX — Runtime / Secrets
