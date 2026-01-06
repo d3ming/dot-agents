@@ -1,4 +1,4 @@
-# AGENTS.MD
+# MASTER-AGENTS.MD: common agent rules for all AI agents.
 
 Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
@@ -24,7 +24,8 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Safe by default: `git status/diff/log`. Push only when user asks.
 - `git checkout` ok for PR review / explicit request.
 - Branch changes require user consent.
-- Destructive ops forbidden unless explicit (`reset --hard`, `clean`, `restore`, `rm`, …).
+- Destructive ops (`rm`, `rm -rf`, `reset --hard`, `clean`, `restore`) forbidden unless user explicitly asks in conversation.
+- No assumptions: if uncertain, ask before deleting—even if it seems temporary or accidental.
 - Remotes under `~/Projects`: prefer HTTPS; flip SSH->HTTPS before pull/push.
 - Commit helper on PATH: `committer` (bash). Prefer it; if repo has `./scripts/committer`, use that.
 - Don’t delete/rename unexpected stuff; stop + ask.

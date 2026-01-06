@@ -5,7 +5,7 @@ Step 1: Reflect on our conversation history. Identify recurring themes, friction
 
 Step 2: Evaluate my performance against the existing global and project-level GEMINI.md rules. Did I follow them? Did they fail to cover a specific scenario we encountered?
 
-Step 3: Propose 1-3 concrete, actionable additions or modifications to the current project's GEMINI.md file. 
+Step 3: Propose 1-3 concrete, actionable additions or modifications to the current project's GEMINI.md file.
 - If the project doesn't have a local GEMINI.md, suggest a new one based on what you've learned about this project's stack and conventions.
 - If we are in a meta-context (like the .gemini config folder), suggest improvements to the global GEMINI.md.
 

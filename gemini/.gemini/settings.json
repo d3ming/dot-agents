@@ -14,7 +14,7 @@
     "enablePromptCompletion": false,
     "preferredEditor": "antigravity",
     "checkpointing": {
-      "enabled": true
+      "enabled": false
     }
   },
   "ui": {

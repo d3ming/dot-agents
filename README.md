@@ -1,82 +1,43 @@
 # dot-agents
 
-Consolidated agent configuration for Claude, Codex, and Gemini—managed via GNU Stow with a shared `AGENTS.md` source of truth.
+Consolidated agent configs for Claude, Codex, and Gemini with shared `MASTER-AGENTS.md` protocol.
 
 ## Structure
 
+**Claude & Codex** (GNU Stow):
 ```
 ~/.claude  → dot-agents/claude/.claude
 ~/.codex   → dot-agents/codex/.codex
-~/.gemini  → dot-agents/gemini/.gemini
-
-# Inside each:
-CLAUDE.md/AGENTS.md/GEMINI.md → ../../shared/AGENTS.md
 ```
 
-## What's Tracked
+**Gemini** (real dir + selective symlinks; CLI needs writable runtime):
+```
+~/.gemini/              = real directory
+~/.gemini/GEMINI.md, settings.json, commands/ = symlinked to repo
+```
 
-- **Claude**: `settings.json`, `commands/`
-- **Codex**: `AGENTS.md`, `prompts/`, `skills/`, `rules/`
-- **Gemini**: `settings.json`, `commands/`
-- **Shared**: `AGENTS.md` (single source of truth)
+All symlink to `shared/MASTER-AGENTS.md` (single protocol source).
 
-## What's Excluded (gitignored)
+## What's Tracked / Ignored
 
-- Runtime state (sessions, history, snapshots)
-- Secrets (OAuth creds, tokens, API keys)
-- Cache (browser profiles, recordings)
-- See `.gitignore` for full list
+**Tracked**: settings, commands, prompts, skills, rules
+**Ignored**: runtime (history, cache), secrets (OAuth), browser profiles
+
+See `.gitignore` for details.
 
 ## Installation
 
-**Prerequisites**: GNU Stow (`brew install stow`)
-
 ```bash
+brew install stow
 ./scripts/install.sh
 ```
 
-This will:
-1. Back up existing `~/.claude`, `~/.codex`, `~/.gemini` to `archive/`
-2. Create Stow symlinks
-3. Restore essential runtime state (auth, identity)
-4. Skip 6GB+ of cache/recordings
-
-## Scripts
-
-- `stage-configs.sh` — Full backup to `archive/`
-- `copy-to-repo.sh` — Copy trackable files from archive to repo (excludes runtime)
-- `create-shared-symlinks.sh` — Link AGENTS.md variants to shared source
-- `install.sh` — Main installation (backup + Stow + restore essentials)
+Backs up existing dirs → archives, installs symlinks, restores essentials.
 
 ## Rollback
 
 ```bash
-# Uninstall symlinks
-cd ~/projects/dot-agents
-stow -D claude codex gemini
-
-# Restore from latest archive
+stow -D claude codex
 LATEST=$(ls -td archive/*/ | head -1)
-mv "${LATEST}claude" ~/.claude
-mv "${LATEST}codex" ~/.codex
-mv "${LATEST}gemini" ~/.gemini
+cp -R "${LATEST}"* ~
 ```
-
-## Publishing
-
-`archive/` is gitignored. Before pushing to remote:
-
-```bash
-# Final secret scan
-rg -i '(api[_-]?key|secret|token|oauth)' claude codex gemini shared
-
-# If clean, push
-git remote add origin <repo-url>
-git push -u origin main
-```
-
-## Philosophy
-
-**Option B**: Full directory symlinks + strict gitignore. Runtime state lives in repo working tree but is never committed. This gives single-location simplicity while maintaining security.
-
-See `PLAN.md` for migration details and decisions.

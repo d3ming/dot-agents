@@ -63,3 +63,4 @@ gemini/.gemini/*.bak*
 # User Tmp Notes
 .notes
 auth.json
+.docs/

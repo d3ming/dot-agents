@@ -19,7 +19,7 @@ echo ""
 # Dry-run first
 echo "🧪 Dry-run: checking for conflicts..."
 cd "$PROJECT_DIR"
-stow -n -v -t ~ claude codex gemini 2>&1 || {
+stow -n -v -t ~ claude codex 2>&1 || {
     echo ""
     echo "⚠️  Conflicts detected. Existing dirs need to be moved first."
     echo ""
@@ -52,9 +52,9 @@ stow -n -v -t ~ claude codex gemini 2>&1 || {
     echo ""
 }
 
-# Real stow
+# Real stow (claude & codex only)
 echo "🔗 Installing symlinks..."
-stow -v -t ~ claude codex gemini
+stow -v -t ~ claude codex
 
 echo ""
 echo "📦 Restoring essential runtime state from archive..."
@@ -89,19 +89,26 @@ if [ -d "${LATEST_ARCHIVE}codex" ]; then
     echo "  ✅ Codex runtime restored"
 fi
 
-# Gemini - SELECTIVE restore (essentials only, skip 6GB bloat)
+# Gemini - Uses selective symlinks (not full stow)
+# Restore full directory, then symlink only tracked configs
 if [ -d "${LATEST_ARCHIVE}gemini" ]; then
-    # Essential auth/identity files
-    [ -f "${LATEST_ARCHIVE}gemini/oauth_creds.json" ] && cp "${LATEST_ARCHIVE}gemini/oauth_creds.json" ~/.gemini/
-    [ -f "${LATEST_ARCHIVE}gemini/installation_id" ] && cp "${LATEST_ARCHIVE}gemini/installation_id" ~/.gemini/
-    [ -f "${LATEST_ARCHIVE}gemini/google_accounts.json" ] && cp "${LATEST_ARCHIVE}gemini/google_accounts.json" ~/.gemini/
-    [ -f "${LATEST_ARCHIVE}gemini/state.json" ] && cp "${LATEST_ARCHIVE}gemini/state.json" ~/.gemini/
+    # Remove stowed symlink if it exists
+    [ -L ~/.gemini ] && rm ~/.gemini
 
-    # Optional: conversation history (72MB) - uncomment if needed
-    # [ -d "${LATEST_ARCHIVE}gemini/history" ] && cp -R "${LATEST_ARCHIVE}gemini/history" ~/.gemini/
+    # Restore full directory from archive
+    cp -R "${LATEST_ARCHIVE}gemini" ~/.gemini
+    echo "  ✅ Gemini directory restored from archive"
 
-    echo "  ✅ Gemini essentials restored (auth, identity)"
-    echo "  ℹ️  Skipped 6GB+ (browser-profile, recordings) - will regenerate"
+    # Remove tracked files (will be symlinked)
+    rm -f ~/.gemini/GEMINI.md
+    rm -f ~/.gemini/settings.json
+    rm -rf ~/.gemini/commands
+
+    # Create selective symlinks for tracked configs
+    ln -sf ../../projects/dot-agents/shared/AGENTS.md ~/.gemini/GEMINI.md
+    ln -sf ../projects/dot-agents/gemini/.gemini/settings.json ~/.gemini/settings.json
+    ln -sf ../projects/dot-agents/gemini/.gemini/commands ~/.gemini/commands
+    echo "  ✅ Gemini configs symlinked (GEMINI.md, settings.json, commands/)"
 fi
 
 echo ""
