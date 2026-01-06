@@ -1,0 +1,9 @@
+description = "Review unstaged changes, stage relevant files, and commit with Conventional Commits."
+
+prompt = """
+Use the shared git-commit skill instructions. If args provided, treat as scope/intent.
+
+Args: {{args}}
+
+@{shared/skills/git-commit/SKILL.md}
+"""
