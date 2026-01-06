@@ -37,17 +37,32 @@ See `.gitignore` for details.
 
 ## Installation
 
+One-time setup for a new machine:
+
 ```bash
-brew install stow
-./scripts/install.sh
+brew install stow gitleaks
+make setup
 ```
 
-Backs up existing dirs → archives, installs symlinks, restores essentials.
+## Workflows
 
-## Rollback
+### Maintenance
+Whenever you update shared skills in `shared/skills/` or modify templates in `gemini/templates/`, you must rebuild the agent configs:
 
 ```bash
-stow -D claude codex
-LATEST=$(ls -td archive/*/ | head -1)
-cp -R "${LATEST}"* ~
+make build
+```
+
+### Security
+A pre-commit hook is installed automatically during `make setup`. To run a manual scan:
+
+```bash
+make lint
+```
+
+### Cleaning
+To remove generated artifacts:
+
+```bash
+make clean
 ```

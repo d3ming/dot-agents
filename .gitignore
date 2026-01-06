@@ -51,6 +51,7 @@ gemini/.gemini/antigravity/
 gemini/.gemini/antigravity-browser-profile/
 gemini/.gemini/extensions/
 gemini/.gemini/tmp/
+gemini/.gemini/commands/
 gemini/.gemini/*.orig
 gemini/.gemini/*.bak*
 
