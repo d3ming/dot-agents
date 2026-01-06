@@ -18,6 +18,16 @@ Consolidated agent configs for Claude, Codex, and Gemini with shared `MASTER-AGE
 
 All symlink to `shared/MASTER-AGENTS.md` (single protocol source).
 
+## Shared Skills Pattern
+
+Canonical skill lives in `shared/skills/<name>/SKILL.md`. Then:
+
+```
+codex/.codex/skills/<name>  -> ../../../shared/skills/<name>
+claude/.claude/skills/<name> -> ../../../shared/skills/<name>
+gemini/.gemini/commands/<name>.toml  (wrapper, injects shared SKILL.md)
+```
+
 ## What's Tracked / Ignored
 
 **Tracked**: settings, commands, prompts, skills, rules
