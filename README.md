@@ -47,7 +47,7 @@ make setup
 ## Workflows
 
 ### Maintenance
-Whenever you update shared skills in `master/skills/` or modify templates in `gemini/templates/`, you must rebuild the agent configs:
+When you add or update shared skills or modify templates in `gemini/templates/`, rebuild Gemini configs (also relinks Codex+Claude skills):
 
 ```bash
 make build
