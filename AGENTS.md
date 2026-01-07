@@ -12,7 +12,6 @@ Store and optimize configurations for Claude, Codex, and Gemini. Focused on skil
 - **Internal Memory**: `.docs/` directory for markdown plans and documentation (AI-visible, Git-ignored).
 - **Operations**:
   - `./scripts/install.sh`: Setup symlinks.
-  - `./scripts/stage-configs.sh`: Backup current state.
 
 ## Workflows
 - Update `master/AGENTS.md` for cross-agent rule changes.

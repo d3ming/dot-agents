@@ -5,6 +5,24 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 
+GEMINI_BACKUP_DIR=""
+
+create_gemini_backup_dir() {
+    if [ -z "$GEMINI_BACKUP_DIR" ]; then
+        GEMINI_BACKUP_DIR="$PROJECT_DIR/archive/gemini-preinstall-$(date +%Y%m%d-%H%M%S)"
+        mkdir -p "$GEMINI_BACKUP_DIR"
+        echo "📦 Backing up existing Gemini files to $GEMINI_BACKUP_DIR"
+    fi
+}
+
+backup_gemini_path() {
+    local src="$1"
+    if [ -e "$src" ] || [ -L "$src" ]; then
+        create_gemini_backup_dir
+        mv "$src" "$GEMINI_BACKUP_DIR/"
+    fi
+}
+
 echo "🔍 Checking prerequisites..."
 
 # Check if stow is installed
@@ -74,15 +92,39 @@ echo "🔗 Installing symlinks..."
 cd "$PROJECT_DIR"
 stow -v -t ~ claude codex
 
-# Gemini setup (using copies because Gemini CLI handles symlinks poorly)
-echo "📂 Copying gemini configs..."
+# Gemini setup (symlink core config files; keep runtime dirs writable)
+echo "📂 Configuring gemini..."
 mkdir -p ~/.gemini
-rm -f ~/.gemini/GEMINI.md ~/.gemini/settings.json
-cp "$PROJECT_DIR/gemini/.gemini/GEMINI.md" ~/.gemini/GEMINI.md
-cp "$PROJECT_DIR/gemini/.gemini/settings.json" ~/.gemini/settings.json
-# Ensure clean directory state to avoid nesting (e.g. commands/commands/)
-rm -rf ~/.gemini/commands
-cp -R "$PROJECT_DIR/gemini/.gemini/commands" ~/.gemini/
+GEMINI_MD_TARGET="$PROJECT_DIR/gemini/.gemini/GEMINI.md"
+GEMINI_SETTINGS_TARGET="$PROJECT_DIR/gemini/.gemini/settings.json"
+GEMINI_COMMANDS_TARGET="$PROJECT_DIR/gemini/.gemini/commands"
+
+# Ensure GEMINI.md is a symlink to the repo-managed file
+if [ -L ~/.gemini/GEMINI.md ] && [ "$(readlink ~/.gemini/GEMINI.md)" = "$GEMINI_MD_TARGET" ]; then
+    echo "✅ ~/.gemini/GEMINI.md already linked."
+else
+    backup_gemini_path ~/.gemini/GEMINI.md
+    ln -s "$GEMINI_MD_TARGET" ~/.gemini/GEMINI.md
+    echo "🔗 Linked ~/.gemini/GEMINI.md"
+fi
+
+# Ensure settings.json is a symlink to the repo-managed file
+if [ -L ~/.gemini/settings.json ] && [ "$(readlink ~/.gemini/settings.json)" = "$GEMINI_SETTINGS_TARGET" ]; then
+    echo "✅ ~/.gemini/settings.json already linked."
+else
+    backup_gemini_path ~/.gemini/settings.json
+    ln -s "$GEMINI_SETTINGS_TARGET" ~/.gemini/settings.json
+    echo "🔗 Linked ~/.gemini/settings.json"
+fi
+
+# Commands are generated; symlink to repo for easy updates
+if [ -L ~/.gemini/commands ] && [ "$(readlink ~/.gemini/commands)" = "$GEMINI_COMMANDS_TARGET" ]; then
+    echo "✅ ~/.gemini/commands already linked."
+else
+    backup_gemini_path ~/.gemini/commands
+    ln -s "$GEMINI_COMMANDS_TARGET" ~/.gemini/commands
+    echo "🔗 Linked ~/.gemini/commands"
+fi
 
 if [ "$SHOULD_RESTORE" = true ]; then
     echo ""
@@ -131,7 +173,7 @@ echo ""
 echo "Verify with:"
 echo "  ls -la ~/.claude ~/.codex ~/.gemini"
 echo ""
-echo "Note: Gemini configs are now REAL FILES (not symlinks) to improve CLI compatibility."
-echo "Use ./scripts/sync-to-repo.sh to save changes (like memories) back to the repo."
+echo "Note: Gemini uses symlinked GEMINI.md, settings.json, and commands/ with real runtime dirs."
+echo "Rebuild configs with: make build (then rerun install if needed)."
 echo ""
 echo "Test your CLI tools to ensure settings are picked up."

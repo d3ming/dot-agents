@@ -53,6 +53,22 @@ When you add or update shared skills or modify templates in `gemini/templates/`,
 make build
 ```
 
+If you need to refresh Gemini’s symlinked files in `~/.gemini/`, rerun:
+
+```bash
+make setup
+```
+
+### Gemini refresh flow
+To keep Gemini in sync with repo changes, run:
+
+```bash
+make build
+make setup
+```
+
+At the start of a Gemini session, run the `init-gemini` command to load Gemini-specific instructions.
+
 ### Security
 A pre-commit hook is installed automatically during `make setup`. To run a manual scan:
 
