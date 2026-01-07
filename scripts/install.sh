@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# install.sh — Move existing dirs to archive and install Stow symlinks
+# install.sh — Idempotent install (safe to rerun); archives before changes
+# IMPORTANT: This script is expected to be run often via `make setup`.
+# It must remain safe and idempotent. Do not delete user files; only move to backup.
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -98,6 +100,7 @@ mkdir -p ~/.gemini
 GEMINI_MD_TARGET="$PROJECT_DIR/gemini/.gemini/GEMINI.md"
 GEMINI_SETTINGS_TARGET="$PROJECT_DIR/gemini/.gemini/settings.json"
 GEMINI_COMMANDS_TARGET="$PROJECT_DIR/gemini/.gemini/commands"
+GEMINI_SKILLS_TARGET="$PROJECT_DIR/master/skills"
 
 # Ensure GEMINI.md is a symlink to the repo-managed file
 if [ -L ~/.gemini/GEMINI.md ] && [ "$(readlink ~/.gemini/GEMINI.md)" = "$GEMINI_MD_TARGET" ]; then
@@ -124,6 +127,15 @@ else
     backup_gemini_path ~/.gemini/commands
     ln -s "$GEMINI_COMMANDS_TARGET" ~/.gemini/commands
     echo "🔗 Linked ~/.gemini/commands"
+fi
+
+# Skills are shared; symlink to master skills
+if [ -L ~/.gemini/skills ] && [ "$(readlink ~/.gemini/skills)" = "$GEMINI_SKILLS_TARGET" ]; then
+    echo "✅ ~/.gemini/skills already linked."
+else
+    backup_gemini_path ~/.gemini/skills
+    ln -s "$GEMINI_SKILLS_TARGET" ~/.gemini/skills
+    echo "🔗 Linked ~/.gemini/skills"
 fi
 
 if [ "$SHOULD_RESTORE" = true ]; then
@@ -170,10 +182,10 @@ fi
 echo ""
 echo "✅ Installation complete!"
 echo ""
-echo "Verify with:"
-echo "  ls -la ~/.claude ~/.codex ~/.gemini"
+echo "📂 Current symlinks:"
+find ~/.claude ~/.codex ~/.gemini -maxdepth 2 -type l -exec ls -la {} +
 echo ""
-echo "Note: Gemini uses symlinked GEMINI.md, settings.json, and commands/ with real runtime dirs."
+echo "Note: Gemini uses symlinked GEMINI.md, settings.json, commands/, and skills/ with real runtime dirs."
 echo "Rebuild configs with: make build (then rerun install if needed)."
 echo ""
 echo "Test your CLI tools to ensure settings are picked up."

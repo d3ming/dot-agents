@@ -1,0 +1,7 @@
+description = "Load shared agent rules for this repo (run at session start)."
+
+prompt = """
+Use the shared agent rules for this repo.
+
+@{master/AGENTS.md}
+"""

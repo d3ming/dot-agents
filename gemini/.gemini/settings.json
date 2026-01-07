@@ -1,8 +1,7 @@
 {
-  "$schema": "https://raw.githubusercontent.com/google-gemini/gemini-cli/main/schemas/settings.schema.json",
   "ide": {
-    "enabled": true,
-    "hasSeenNudge": true
+    "hasSeenNudge": true,
+    "enabled": true
   },
   "security": {
     "auth": {
@@ -10,38 +9,17 @@
     }
   },
   "general": {
-    "previewFeatures": true,
-    "enablePromptCompletion": false,
-    "preferredEditor": "antigravity",
-    "checkpointing": {
-      "enabled": false
-    }
-  },
-  "ui": {
-    "footer": {
-      "hideContextPercentage": false
-    },
-    "showMemoryUsage": true,
-    "showStatusInTitle": true,
-    "showModelInfoInChat": true,
-    "showCitations": true,
-    "showLineNumbers": true
-  },
-  "tools": {
-    "shell": {
-      "showColor": true
-    },
-    "useRipgrep": true,
-    "autoAccept": true,
-    "sandbox": true
-  },
-  "model": {
-    "compressionThreshold": 0.3
+    "previewFeatures": true
   },
   "experimental": {
-    "enableAgents": true,
-    "codebaseInvestigatorSettings": {
+    "introspectionAgentSettings": {
       "enabled": true
     }
+  },
+  "context": {
+    "loadMemoryFromIncludeDirectories": true
+  },
+  "ui": {
+    "showMemoryUsage": true
   }
 }

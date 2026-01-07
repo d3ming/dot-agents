@@ -1,11 +1,12 @@
-.PHONY: help setup build lint clean link-skill
+.PHONY: help setup build lint clean
+.DEFAULT_GOAL := setup
 
 # Default target
 help:
 	@echo "Usage:"
-	@echo "  make setup    - One-time installation: install symlinks and bootstrap configs"
-	@echo "  make build    - Relink shared skills + compile Gemini commands (run after editing skills)"
-	@echo "  make link-skill NAME=<skill> - Link master skill into Codex+Claude"
+	@echo "  make          - Full install (idempotent); safe to run anytime"
+	@echo "  make setup    - Full install (idempotent); safe to run anytime"
+	@echo "  make build    - Relink shared skills + generate Gemini commands (run after editing skills)"
 	@echo "  make lint     - Run secret scanning (gitleaks)"
 	@echo "  make clean    - Remove generated build artifacts"
 
@@ -20,9 +21,6 @@ build:
 	@./scripts/link-skill.sh
 	@echo "🔨 Compiling templates..."
 	@./scripts/compile-gemini.py
-
-link-skill:
-	@./scripts/link-skill.sh $(NAME)
 
 lint:
 	@echo "🔍 Running gitleaks..."

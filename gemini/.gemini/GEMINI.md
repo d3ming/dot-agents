@@ -1,1 +1,1 @@
-../../master/AGENTS.md
+../../master/GEMINI.md

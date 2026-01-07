@@ -1,7 +1,0 @@
-description = "Load Gemini-specific instructions for this repo (run at session start)."
-
-prompt = """
-Use the Gemini-specific instructions for this repo.
-
-@{master/gemini-extra.md}
-"""

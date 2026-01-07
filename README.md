@@ -13,7 +13,9 @@ Consolidated agent configs for Claude, Codex, and Gemini with master `AGENTS.md`
 **Gemini** (real dir + selective symlinks; CLI needs writable runtime):
 ```
 ~/.gemini/              = real directory
-~/.gemini/GEMINI.md, settings.json, commands/ = symlinked to repo
+~/.gemini/GEMINI.md, settings.json, commands/, skills/ = symlinked to repo
+~/.gemini/settings.json -> dot-agents/gemini/.gemini/settings.json (canonical)
+~/.gemini/GEMINI.md -> dot-agents/master/GEMINI.md (Gemini-writable extras)
 ```
 
 All symlink to `master/AGENTS.md` (single protocol source).
@@ -47,7 +49,7 @@ make setup
 ## Workflows
 
 ### Maintenance
-When you add or update shared skills or modify templates in `gemini/templates/`, rebuild Gemini configs (also relinks Codex+Claude skills):
+When you add or update shared skills or modify templates in `gemini/templates/`, rebuild Gemini commands (also relinks Codex+Claude skills):
 
 ```bash
 make build
@@ -67,7 +69,11 @@ make build
 make setup
 ```
 
-At the start of a Gemini session, run the `init-gemini` command to load Gemini-specific instructions.
+At the start of a Gemini session, run `init-agent` to load shared agent rules.
+
+Notes:
+- Handcrafted Gemini commands live in `gemini/templates/commands/`.
+- Skill-based Gemini commands are generated into `gemini/.gemini/commands/`.
 
 ### Security
 A pre-commit hook is installed automatically during `make setup`. To run a manual scan:

@@ -3,7 +3,8 @@
 Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
 ## Agent Protocol
-- “Make a note” => edit AGENTS.md (shortcut; not a blocker). Ignore `CLAUDE.md`.
+- Workspace: `~/projects`.
+- Shared skills directory: `~/projects/dot-agents/master/skills/`.
 - Need upstream file: stage in `/tmp/`, then cherry-pick; never overwrite tracked.
 - Bugs: add regression test when it fits.
 - Keep files <~500 LOC; split/refactor as needed.
@@ -17,6 +18,7 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Questions: `QQ:` or `Question:` prefix => answer only, no code.
 
 ## Flow & Runtime
+- Use `Makefile` and prefer `make` commands whenever possible.
 - Use repo’s package manager/runtime; no swaps w/o approval.
 - Use Codex background for long jobs; tmux only for interactive/persistent (debugger/server).
 
