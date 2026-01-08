@@ -69,5 +69,5 @@ auth.json
 test_ignored.txt
 
 # Ignore reference repo contents but keep the folder and README tracked
-/refs/*/
-!/refs/README.md
+/.refs/*/
+!/.refs/README.md
