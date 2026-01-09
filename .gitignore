@@ -20,6 +20,7 @@ claude/.claude/file-history/
 claude/.claude/session-env/
 claude/.claude/shell-snapshots/
 claude/.claude/ide/
+claude/.claude/cache/
 claude/.claude/claude-reference-guide.md
 claude/.claude/stats-cache.json
 
@@ -59,6 +60,7 @@ gemini/.gemini/*.bak*
 # GENERAL
 # =============================================================================
 .DS_Store
+**/cache/
 *.log
 *.jsonl
 
