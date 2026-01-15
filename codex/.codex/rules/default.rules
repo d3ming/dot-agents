@@ -1,0 +1,1 @@
+prefix_rule(pattern=["git", "fetch", "origin", "main"], decision="allow")

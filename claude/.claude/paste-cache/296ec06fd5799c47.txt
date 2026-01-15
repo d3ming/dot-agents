@@ -1,0 +1,35 @@
+› make cli
+Starting new Folio CLI interactive shell...
+Folio CLI - Interactive Shell
+Type help for a list of commands or exit to quit
+                      Portfolio Summary
+┏━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━┓
+┃ Metric                 │               Value │ % of Total ┃
+┠────────────────────────┼─────────────────────┼────────────┨
+┃ Total Value            │          $3,770,008 │    100.00% ┃
+┃ Stock Value            │          $2,373,982 │     62.97% ┃
+┃ Option Value           │            $571,584 │     15.16% ┃
+┃ Cash Value             │            $879,064 │     23.32% ┃
+┃ Pending Activity       │           ($54,622) │    (1.45%) ┃
+┃ Net Delta Exposure     │          $3,118,997 │     82.73% ┃
+┃ Beta Adjusted Exposure │          $4,165,456 │    110.49% ┃
+┃ Data as of             │ 2026-01-14 22:05:07 │            ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━┛
+                         Charter Status
+┏━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Metric              │    Target │                     Current ┃
+┠─────────────────────┼───────────┼─────────────────────────────┨
+┃ Overall State       │           │                         RED ┃
+┃ Binding Constraint  │           │ beta_concentration (100.0%) ┃
+┃ Net Beta Exposure   │ 0.9x-1.2x │               110.00% % NAV ┃
+┃ Max Conc. (Delta)   │ <= 20.00% │        100.00% (AAPL) % NAV ┃
+┃ Max Conc. (Beta)    │ <= 20.00% │ 100.00% (AAPL) % Risk Share ┃
+┃ Stress Shock (-20%) │ <= 15.00% │           21.77% % NAV loss ┃
+┃ Options Reserve     │ >= 10.00% │                 0.00% % NAV ┃
+┃ Survivability (Net) │ >= 10.00% │      0.00% % NAV (Cash-Res) ┃
+┃ NMBP (Proxy)        │           │                50.00% % NAV ┃
+┗━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+Imported: 2026-01-14 22:05:07
+Current snapshot id: 181
+Use `snapshots` to list IDs, `load <id>` to select one, or `import` to ingest a
+CSV.

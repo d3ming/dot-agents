@@ -1,7 +1,7 @@
 {
   "ide": {
     "hasSeenNudge": true,
-    "enabled": true
+    "enabled": false
   },
   "security": {
     "auth": {
@@ -13,7 +13,7 @@
   },
   "experimental": {
     "introspectionAgentSettings": {
-      "enabled": true
+      "enabled": false
     }
   },
   "context": {

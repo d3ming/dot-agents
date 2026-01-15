@@ -20,7 +20,3 @@ Store and optimize configurations for Claude, Codex, and Gemini. Focused on skil
 - Update `master/AGENTS.md` for cross-agent rule changes.
 - Optimize and share skills/prompts across the subdirectories.
 - Prefer shared skills: canonical `master/skills/<name>/SKILL.md`, then symlink into `codex/.codex/skills/` and `claude/.claude/skills/`. Use a Gemini wrapper command that injects the shared SKILL.md.
-
-## Git
-- Automatically commit changes once complete.
-- Keep commits atomic and small (OK to have multiple commits per task in this repo).

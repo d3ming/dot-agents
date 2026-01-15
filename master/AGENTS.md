@@ -4,6 +4,7 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
 ## Agent Protocol
 - Workspace: `~/projects`.
+- Screenshots in `~/Desktop`, if I ask you to refer to screenshot find the latest `Screenshot**.png` file.
 - Shared skills directory: `~/projects/dot-agents/master/skills/`.
 - Need upstream file: stage in `/tmp/`, then cherry-pick; never overwrite tracked.
 - Bugs: add regression test when it fits.
@@ -21,6 +22,7 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Use `Makefile` and prefer `make` commands whenever possible.
 - Use repo’s package manager/runtime; no swaps w/o approval.
 - Use Codex background for long jobs; tmux only for interactive/persistent (debugger/server).
+- Write handoff msg at the end of every session, needs to have enough context for new hire to pick up where you left off.
 
 ## Git
 - Safe by default: `git status/diff/log`. Push only when user asks.
