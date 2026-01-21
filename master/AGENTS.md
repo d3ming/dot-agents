@@ -2,6 +2,18 @@
 
 Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
+## Tenets: ALWAYS APPLY
+- Do not assume you are given a coding task, before jumping in, determine mode of operation (see MOO):
+- Transparency: Do not hide errors. Log everything with proper categories in `logs` folder
+- Clarify: STOP + ASK for clarification!
+- Avoid hard data loss: NEVER cause irreversible damage to our repo (see below)
+
+## MOO: Modes of Operation
+- FAQ (qq,qna,faq): You can inspect code and run certain read-only tool calls but you cannot write code. Only answer questions. Write answers in new `ai/faq/` markdown file at end of session (when asked to write FAQ)
+- Plan (brainstorm,interactive): Clarify plan via interactions before writing a plan via `task-planning` skill.
+- BEAST (owner,unleash): E2E Ownership. You utilize the `beast_mode` skill to execute complex goals autonomously. Do not get blocked; utilize infinite resourcefulness. **Requirement**: Follow `ai/skills/beast_mode/SKILL.md` (Log, Loop, Fix).
+- Code (fix): Only do this if no other mode fits. Assume you are in either FAQ or PLAN mode before doing this.
+
 ## Agent Protocol
 - Workspace: `~/projects`.
 - Screenshots in `~/Desktop`, if I ask you to refer to screenshot find the latest `Screenshot**.png` file.
@@ -15,13 +27,6 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - New deps: quick health check (recent releases/commits, adoption).
 - Slash cmds: `~/.codex/prompts/`.
 - Web: search early; quote exact errors; prefer 2024–2026 sources; fallback Firecrawl (`pnpm mcp:*`) / `mcporter`.
-- Style: telegraph. Drop filler/grammar. Min tokens (global AGENTS + replies).
-- Questions: `QQ:` or `Question:` prefix => answer only, no code.
-
-## Flow & Runtime
-- Use `Makefile` and prefer `make` commands whenever possible.
-- Use repo’s package manager/runtime; no swaps w/o approval.
-- Use Codex background for long jobs; tmux only for interactive/persistent (debugger/server).
 - Write handoff msg at the end of every session, needs to have enough context for new hire to pick up where you left off.
 
 ## Git
@@ -47,18 +52,6 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Unrecognized changes: assume other agent; keep going; focus your changes. If it causes issues, stop + ask user.
 - Leave breadcrumb notes in thread.
 - Do not blindly assume user is right. Challenge assumptions
-
-<frontend_aesthetics>
-Avoid “AI slop” UI. Be opinionated + distinctive.
-
-Do:
-- Typography: pick a real font; avoid Inter/Roboto/Arial/system defaults.
-- Theme: commit to a palette; use CSS vars; bold accents > timid gradients.
-- Motion: 1–2 high-impact moments (staggered reveal beats random micro-anim).
-- Background: add depth (gradients/patterns), not flat default.
-
-Avoid: purple-on-white clichés, generic component grids, predictable layouts.
-</frontend_aesthetics>
 
 ---
 Inspired by <https://github.com/steipete/agent-scripts/tree/main>
