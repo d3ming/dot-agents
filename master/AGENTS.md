@@ -18,6 +18,11 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Workspace: `~/projects`.
 - Screenshots in `~/Desktop`, if I ask you to refer to screenshot find the latest `Screenshot**.png` file.
 - Shared skills directory: `~/projects/dot-agents/master/skills/`.
+- **Skill resources**: Skills may include scripts, assets, or other files. To locate skill resources:
+  - Skills are symlinked: `~/.codex/skills/`, `~/.claude/skills/`, `~/.gemini/skills/` → `master/skills/`
+  - Find a skill resource: `find ~/.codex ~/.claude ~/.gemini -path "*/<skill-name>/<resource-path>" 2>/dev/null | head -1`
+  - Example: `find ~/.codex ~/.claude ~/.gemini -path "*/gh-address-comments/scripts/fetch_comments.py" 2>/dev/null | head -1`
+  - Never use relative paths like `scripts/file.py` - always resolve the full path first
 - Need upstream file: stage in `/tmp/`, then cherry-pick; never overwrite tracked.
 - Bugs: add regression test when it fits.
 - Keep files <~500 LOC; split/refactor as needed.
