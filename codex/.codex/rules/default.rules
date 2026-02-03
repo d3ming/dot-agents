@@ -1,1 +1,170 @@
-prefix_rule(pattern=["git", "fetch", "origin", "main"], decision="allow")
+# Codex CLI Permission Rules (Starlark)
+# Philosophy: Conservative - allow reads, prompt writes, forbid catastrophic
+#
+# Decision precedence: forbidden > prompt > allow
+# Unmatched commands default to "prompt"
+
+# =============================================================================
+# ALLOWED - Safe read-only operations (no prompting)
+# =============================================================================
+
+# File system - read only
+prefix_rule(pattern = ["ls"], decision = "allow")
+prefix_rule(pattern = ["cat"], decision = "allow")
+prefix_rule(pattern = ["head"], decision = "allow")
+prefix_rule(pattern = ["tail"], decision = "allow")
+prefix_rule(pattern = ["less"], decision = "allow")
+prefix_rule(pattern = ["more"], decision = "allow")
+prefix_rule(pattern = ["wc"], decision = "allow")
+prefix_rule(pattern = ["pwd"], decision = "allow")
+prefix_rule(pattern = ["tree"], decision = "allow")
+prefix_rule(pattern = ["file"], decision = "allow")
+prefix_rule(pattern = ["stat"], decision = "allow")
+prefix_rule(pattern = ["du"], decision = "allow")
+prefix_rule(pattern = ["df"], decision = "allow")
+
+# Search tools - read only
+prefix_rule(pattern = ["find"], decision = "allow")
+prefix_rule(pattern = ["grep"], decision = "allow")
+prefix_rule(pattern = ["rg"], decision = "allow")
+prefix_rule(pattern = ["ag"], decision = "allow")
+prefix_rule(pattern = ["fd"], decision = "allow")
+prefix_rule(pattern = ["fzf"], decision = "allow")
+prefix_rule(pattern = ["which"], decision = "allow")
+prefix_rule(pattern = ["whereis"], decision = "allow")
+prefix_rule(pattern = ["type"], decision = "allow")
+
+# Git - read only
+prefix_rule(pattern = ["git", "status"], decision = "allow")
+prefix_rule(pattern = ["git", "diff"], decision = "allow")
+prefix_rule(pattern = ["git", "log"], decision = "allow")
+prefix_rule(pattern = ["git", "show"], decision = "allow")
+prefix_rule(pattern = ["git", "branch"], decision = "allow")
+prefix_rule(pattern = ["git", "tag"], decision = "allow")
+prefix_rule(pattern = ["git", "remote"], decision = "allow")
+prefix_rule(pattern = ["git", "stash", "list"], decision = "allow")
+prefix_rule(pattern = ["git", "config", "--get"], decision = "allow")
+prefix_rule(pattern = ["git", "config", "--list"], decision = "allow")
+prefix_rule(pattern = ["git", "rev-parse"], decision = "allow")
+prefix_rule(pattern = ["git", "ls-files"], decision = "allow")
+prefix_rule(pattern = ["git", "ls-tree"], decision = "allow")
+prefix_rule(pattern = ["git", "blame"], decision = "allow")
+prefix_rule(pattern = ["git", "shortlog"], decision = "allow")
+
+# GitHub CLI - read only
+prefix_rule(pattern = ["gh", "pr", "list"], decision = "allow")
+prefix_rule(pattern = ["gh", "pr", "view"], decision = "allow")
+prefix_rule(pattern = ["gh", "pr", "status"], decision = "allow")
+prefix_rule(pattern = ["gh", "pr", "diff"], decision = "allow")
+prefix_rule(pattern = ["gh", "pr", "checks"], decision = "allow")
+prefix_rule(pattern = ["gh", "issue", "list"], decision = "allow")
+prefix_rule(pattern = ["gh", "issue", "view"], decision = "allow")
+prefix_rule(pattern = ["gh", "issue", "status"], decision = "allow")
+prefix_rule(pattern = ["gh", "repo", "view"], decision = "allow")
+prefix_rule(pattern = ["gh", "repo", "list"], decision = "allow")
+prefix_rule(pattern = ["gh", "run", "list"], decision = "allow")
+prefix_rule(pattern = ["gh", "run", "view"], decision = "allow")
+prefix_rule(pattern = ["gh", "api"], decision = "allow")
+prefix_rule(pattern = ["gh", "auth", "status"], decision = "allow")
+
+# Build tools - generally safe
+prefix_rule(pattern = ["make"], decision = "allow")
+prefix_rule(pattern = ["just"], decision = "allow")
+
+# Package managers - info/list only
+prefix_rule(pattern = ["npm", "list"], decision = "allow")
+prefix_rule(pattern = ["npm", "ls"], decision = "allow")
+prefix_rule(pattern = ["npm", "info"], decision = "allow")
+prefix_rule(pattern = ["npm", "view"], decision = "allow")
+prefix_rule(pattern = ["npm", "outdated"], decision = "allow")
+prefix_rule(pattern = ["npm", "audit"], decision = "allow")
+prefix_rule(pattern = ["pnpm", "list"], decision = "allow")
+prefix_rule(pattern = ["pnpm", "ls"], decision = "allow")
+prefix_rule(pattern = ["pnpm", "outdated"], decision = "allow")
+prefix_rule(pattern = ["pnpm", "audit"], decision = "allow")
+prefix_rule(pattern = ["yarn", "list"], decision = "allow")
+prefix_rule(pattern = ["yarn", "info"], decision = "allow")
+prefix_rule(pattern = ["yarn", "outdated"], decision = "allow")
+prefix_rule(pattern = ["yarn", "audit"], decision = "allow")
+prefix_rule(pattern = ["poetry", "show"], decision = "allow")
+prefix_rule(pattern = ["poetry", "version"], decision = "allow")
+prefix_rule(pattern = ["uv", "pip", "list"], decision = "allow")
+prefix_rule(pattern = ["uv", "pip", "show"], decision = "allow")
+prefix_rule(pattern = ["pip", "list"], decision = "allow")
+prefix_rule(pattern = ["pip", "show"], decision = "allow")
+prefix_rule(pattern = ["pip", "freeze"], decision = "allow")
+
+# Environment info
+prefix_rule(pattern = ["env"], decision = "allow")
+prefix_rule(pattern = ["printenv"], decision = "allow")
+prefix_rule(pattern = ["echo"], decision = "allow")
+prefix_rule(pattern = ["date"], decision = "allow")
+prefix_rule(pattern = ["uname"], decision = "allow")
+prefix_rule(pattern = ["whoami"], decision = "allow")
+prefix_rule(pattern = ["id"], decision = "allow")
+prefix_rule(pattern = ["hostname"], decision = "allow")
+
+# Version checks
+prefix_rule(pattern = ["python", "--version"], decision = "allow")
+prefix_rule(pattern = ["python3", "--version"], decision = "allow")
+prefix_rule(pattern = ["node", "--version"], decision = "allow")
+prefix_rule(pattern = ["npm", "--version"], decision = "allow")
+prefix_rule(pattern = ["git", "--version"], decision = "allow")
+
+# =============================================================================
+# FORBIDDEN - Catastrophic or highly dangerous (blocked entirely)
+# =============================================================================
+
+# Privilege escalation
+prefix_rule(pattern = ["sudo"], decision = "forbidden")
+prefix_rule(pattern = ["su"], decision = "forbidden")
+prefix_rule(pattern = ["doas"], decision = "forbidden")
+
+# Destructive file operations
+prefix_rule(pattern = ["rm", "-rf"], decision = "forbidden")
+prefix_rule(pattern = ["rm", "-fr"], decision = "forbidden")
+prefix_rule(pattern = ["rm", "-r"], decision = "forbidden")
+
+# System-level destruction
+prefix_rule(pattern = ["dd"], decision = "forbidden")
+prefix_rule(pattern = ["mkfs"], decision = "forbidden")
+prefix_rule(pattern = ["fdisk"], decision = "forbidden")
+prefix_rule(pattern = ["parted"], decision = "forbidden")
+prefix_rule(pattern = ["format"], decision = "forbidden")
+
+# Dangerous permission changes
+prefix_rule(pattern = ["chmod", "777"], decision = "forbidden")
+prefix_rule(pattern = ["chmod", "-R"], decision = "forbidden")
+prefix_rule(pattern = ["chown", "-R"], decision = "forbidden")
+
+# Git - destructive operations
+prefix_rule(pattern = ["git", "push", "--force"], decision = "forbidden")
+prefix_rule(pattern = ["git", "push", "-f"], decision = "forbidden")
+prefix_rule(pattern = ["git", "push", "--force-with-lease"], decision = "forbidden")
+prefix_rule(pattern = ["git", "reset", "--hard"], decision = "forbidden")
+prefix_rule(pattern = ["git", "clean", "-f"], decision = "forbidden")
+prefix_rule(pattern = ["git", "clean", "-fd"], decision = "forbidden")
+prefix_rule(pattern = ["git", "clean", "-df"], decision = "forbidden")
+prefix_rule(pattern = ["git", "filter-branch"], decision = "forbidden")
+prefix_rule(pattern = ["git", "rebase", "-i"], decision = "forbidden")
+prefix_rule(pattern = ["git", "reflog", "expire"], decision = "forbidden")
+prefix_rule(pattern = ["git", "gc", "--prune=now"], decision = "forbidden")
+
+# Network - dangerous
+prefix_rule(pattern = ["curl", "-X", "DELETE"], decision = "forbidden")
+prefix_rule(pattern = ["wget", "--delete-after"], decision = "forbidden")
+
+# Shell escapes
+prefix_rule(pattern = ["eval"], decision = "forbidden")
+prefix_rule(pattern = ["exec"], decision = "forbidden")
+
+# =============================================================================
+# Everything else defaults to "prompt" - user decides at runtime
+# This includes: git add/commit/push, npm install, python scripts, etc.
+# =============================================================================
+prefix_rule(pattern=["cd", "/Users/dongming/projects/capfolio"], decision="allow")
+prefix_rule(pattern=["uv", "init", "--name", "dming-taxes", "--package"], decision="allow")
+prefix_rule(pattern=["uv", "add", "pypdf"], decision="allow")
+prefix_rule(pattern=["cat"], decision="allow")
+prefix_rule(pattern=["git", "fetch"], decision="allow")
+prefix_rule(pattern=["git", "rebase"], decision="allow")

@@ -82,6 +82,22 @@ A pre-commit hook is installed automatically during `make setup`. To run a manua
 make lint
 ```
 
+### Permission Management
+All agents use a **hybrid allowlist + denylist approach** for command permissions:
+- **Allowlist**: Common safe commands (make, git, language runtimes) run without prompting
+- **Denylist**: Dangerous commands (rm -rf, git reset, sudo) are blocked entirely
+- **Prompt zone**: Everything else requires user confirmation
+
+See [`master/PERMISSIONS.md`](master/PERMISSIONS.md) for the canonical permission reference.
+
+**Configuration files**:
+- Claude: `claude/.claude/settings.json`
+- Codex: `codex/.codex/rules/default.rules`
+- Gemini: `gemini/.gemini/settings.json`
+
+For implementation details, see [`docs/permission-defaults-plan.md`](docs/permission-defaults-plan.md).
+
+
 ### Cleaning
 To remove generated artifacts:
 

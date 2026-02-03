@@ -24,5 +24,66 @@
   },
   "model": {
     "name": "gemini-3-pro-preview"
+  },
+  "tools": {
+    "autoApprove": {
+      "enabled": true,
+      "commands": [
+        "make",
+        "git status",
+        "git diff",
+        "git log",
+        "git add",
+        "git commit",
+        "git pull",
+        "git fetch",
+        "git branch",
+        "git checkout",
+        "git switch",
+        "git merge",
+        "git rebase",
+        "git cherry-pick",
+        "gh",
+        "ls",
+        "cat",
+        "find",
+        "grep",
+        "rg",
+        "head",
+        "tail",
+        "wc",
+        "tree",
+        "pwd",
+        "mkdir",
+        "mv",
+        "cp",
+        "touch",
+        "python",
+        "python3",
+        "node",
+        "npm",
+        "pnpm",
+        "poetry",
+        "uv"
+      ],
+      "denyList": [
+        "rm -rf",
+        "rm -r",
+        "rmdir",
+        "git push --force",
+        "git push -f",
+        "git reset",
+        "git restore",
+        "git clean",
+        "git stash",
+        "git filter-branch",
+        "git rebase -i",
+        "sudo",
+        "chmod 777",
+        "chown",
+        "dd",
+        "mkfs"
+      ]
+    }
   }
 }

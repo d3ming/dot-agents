@@ -24,10 +24,13 @@ claude/.claude/cache/
 claude/.claude/claude-reference-guide.md
 claude/.claude/stats-cache.json
 claude/.claude/paste-cache/*
+claude/.claude/tasks/
+claude/.claude/telemetry/
 
 # =============================================================================
 # CODEX — Runtime / Secrets
 # =============================================================================
+codex/.codex/sqlite/
 codex/.codex/sessions/
 codex/.codex/shell_snapshots/
 codex/.codex/log/
@@ -40,6 +43,11 @@ codex/.codex/config.bak.toml
 codex/.codex/auth.json
 codex/.codex/history.jsonl
 codex/.codex/skills/.system/
+codex/.codex/models_cache.json
+codex/.codex/rules/.claude/
+codex/.codex/vendor_imports/
+codex/.codex/.codex-global-state.json
+codex/.codex/.personality_migration
 
 # =============================================================================
 # GEMINI — Runtime / Secrets
@@ -61,6 +69,7 @@ gemini/.gemini/*.bak*
 # GENERAL
 # =============================================================================
 .DS_Store
+/.claude/
 **/cache/
 *.log
 *.jsonl

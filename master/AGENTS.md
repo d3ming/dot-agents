@@ -4,7 +4,7 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
 ## Tenets: ALWAYS APPLY
 - Do not assume you are given a coding task, before jumping in, determine mode of operation (see MOO):
-- Transparency: Do not hide errors. Log everything with proper categories in `logs` folder
+- Do it right. No quick fixes unless explicitly asked. Prioritize long term maintainability.
 - Clarify: STOP + ASK for clarification!
 - Avoid hard data loss: NEVER cause irreversible damage to our repo (see below)
 
@@ -22,7 +22,6 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Bugs: add regression test when it fits.
 - Keep files <~500 LOC; split/refactor as needed.
 - Commits: Conventional Commits (`feat|fix|refactor|build|ci|chore|docs|style|perf|test`).
-- Editor: `antigravity <path>`.
 - Prefer end-to-end verify; if blocked, say what’s missing.
 - New deps: quick health check (recent releases/commits, adoption).
 - Slash cmds: `~/.codex/prompts/`.
@@ -36,7 +35,6 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Destructive ops (`rm`, `rm -rf`, `reset --hard`, `clean`, `restore`) forbidden unless user explicitly asks in conversation.
 - No assumptions: if uncertain, ask before deleting—even if it seems temporary or accidental.
 - Remotes under `~/Projects`: prefer HTTPS; flip SSH->HTTPS before pull/push.
-- Commit helper on PATH: `committer` (bash). Prefer it; if repo has `./scripts/committer`, use that.
 - Don’t delete/rename unexpected stuff; stop + ask.
 - No repo-wide S/R scripts; keep edits small/reviewable.
 - Avoid manual `git stash`; if Git auto-stashes during pull/rebase, that’s fine (hint, not hard guardrail).
@@ -44,6 +42,12 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - No amend unless asked.
 - Big review: `git --no-pager diff --color=never`.
 - Multi-agent: check `git status/diff` before edits; ship small commits.
+
+## PR Feedback
+- Active PR: `gh pr view --json number,title,url --jq '"PR #\\(.number): \\(.title)\\n\\(.url)"'`.
+- PR comments: `gh pr view …` + `gh api …/comments --paginate`.
+- Replies: cite fix + file/line; resolve threads only after fix lands.
+- When merging a PR: thank the contributor in `CHANGELOG.md`.
 
 ## Critical Thinking
 - Fix root cause (not band-aid).

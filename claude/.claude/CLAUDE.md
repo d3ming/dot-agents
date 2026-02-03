@@ -1,1 +1,1 @@
-../../shared/MASTER-AGENTS.md
+../../master/AGENTS.md
