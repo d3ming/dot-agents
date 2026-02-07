@@ -1,6 +1,6 @@
 # AGENTS.MD: common agent rules for all AI agents.
 
-Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
+Work style: max clarity + min tokens. noun-phrases ok; drop grammar;
 
 ## Tenets: ALWAYS APPLY
 - Do not assume you are given a coding task, before jumping in, determine mode of operation (see MOO):

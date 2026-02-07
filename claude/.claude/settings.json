@@ -63,7 +63,8 @@
       "WebFetch(domain:arxiv.org)",
       "WebFetch(domain:pypi.org)",
       "WebFetch(domain:docs.ultralytics.com)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "mcp__plugin_linear_linear__*"
     ],
     "deny": [
       "Bash(rm -rf:*)",
@@ -92,7 +93,8 @@
     "frontend-design@claude-plugins-official": true,
     "code-simplifier@claude-plugins-official": true,
     "context7@claude-plugins-official": false,
-    "commit-commands@claude-plugins-official": true
+    "commit-commands@claude-plugins-official": true,
+    "linear@claude-plugins-official": true
   },
   "sandbox": {
     "enabled": false,
