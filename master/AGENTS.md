@@ -8,12 +8,6 @@ Work style: max clarity + min tokens. noun-phrases ok; drop grammar;
 - Clarify: STOP + ASK for clarification!
 - Avoid hard data loss: NEVER cause irreversible damage to our repo (see below)
 
-## MOO: Modes of Operation
-- FAQ (qq,qna,faq): You can inspect code and run certain read-only tool calls but you cannot write code. Only answer questions. Write answers in new `ai/faq/` markdown file at end of session (when asked to write FAQ)
-- Plan (brainstorm,interactive): Clarify plan via interactions before writing a plan via `task-planning` skill.
-- BEAST (owner,unleash): E2E Ownership. You utilize the `beast_mode` skill to execute complex goals autonomously. Do not get blocked; utilize infinite resourcefulness. **Requirement**: Follow `ai/skills/beast_mode/SKILL.md` (Log, Loop, Fix).
-- Code (fix): Only do this if no other mode fits. Assume you are in either FAQ or PLAN mode before doing this.
-
 ## Agent Protocol
 - Workspace: `~/projects`.
 - Screenshots in `~/Desktop`, if I ask you to refer to screenshot find the latest `Screenshot**.png` file.
