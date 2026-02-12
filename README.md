@@ -4,18 +4,23 @@ Consolidated agent configs for Claude, Codex, and Gemini with master `AGENTS.md`
 
 ## Structure
 
+**Home-level dotfiles** (GNU Stow):
+```
+~/.claude.json → dot-agents/home/.claude.json (preferences: autoCompactEnabled, etc.)
+```
+
 **Claude & Codex** (GNU Stow):
 ```
-~/.claude  → dot-agents/claude/.claude
-~/.codex   → dot-agents/codex/.codex
+~/.claude  → dot-agents/claude/.claude (settings, commands, skills)
+~/.codex   → dot-agents/codex/.codex   (rules, prompts, skills)
 ```
 
 **Gemini** (real dir + selective symlinks; CLI needs writable runtime):
 ```
-~/.gemini/              = real directory
+~/.gemini/              = real directory (history/, cache/, etc.)
 ~/.gemini/GEMINI.md, settings.json, commands/, skills/ = symlinked to repo
-~/.gemini/settings.json -> dot-agents/gemini/.gemini/settings.json (canonical)
-~/.gemini/GEMINI.md -> dot-agents/master/GEMINI.md (Gemini-writable extras)
+~/.gemini/settings.json → dot-agents/gemini/.gemini/settings.json (canonical)
+~/.gemini/GEMINI.md → dot-agents/master/GEMINI.md (Gemini-writable extras)
 ```
 
 All symlink to `master/AGENTS.md` (single protocol source).
@@ -32,10 +37,33 @@ gemini/.gemini/commands/<name>.toml  (wrapper, injects shared SKILL.md)
 
 ## What's Tracked / Ignored
 
-**Tracked**: settings, commands, prompts, skills, rules
-**Ignored**: runtime (history, cache), secrets (OAuth), browser profiles
+**Tracked**:
+- Settings files (`.claude/settings.json`, `.codex/rules/`, `.gemini/settings.json`)
+- Preferences (`home/.claude.json` - cached feature flags removed)
+- Commands, prompts, skills, rules
+- Shared protocols (`master/AGENTS.md`)
+
+**Ignored**:
+- Runtime state (history.jsonl, cache/, debug/, session-env/)
+- Secrets (OAuth, auth tokens)
+- Browser profiles, telemetry
+- Large cached data (Statsig gates, GrowthBook features)
 
 See `.gitignore` for details.
+
+### How GNU Stow Works
+
+Stow creates symlinks by mirroring directory structure:
+```bash
+# Package structure:
+dot-agents/home/.claude.json    # Package dir "home/" is stripped
+# Result: ~/.claude.json → /full/path/to/dot-agents/home/.claude.json
+
+# Installation:
+cd dot-agents && stow -t ~ home   # Symlinks everything in home/ to ~/
+```
+
+The package directory name is removed, and contents are symlinked to target.
 
 ## Installation
 

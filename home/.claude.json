@@ -1,0 +1,2570 @@
+{
+  "numStartups": 204,
+  "installMethod": "native",
+  "autoUpdates": false,
+  "verbose": true,
+  "autoCompactEnabled": false,
+  "hasSeenTasksHint": true,
+  "tipsHistory": {
+    "new-user-warmup": 11,
+    "plan-mode-for-complex-tasks": 202,
+    "memory-command": 197,
+    "theme-command": 190,
+    "status-line": 3,
+    "stickers-command": 68,
+    "prompt-queue": 29,
+    "enter-to-steer-in-relatime": 191,
+    "todo-list": 191,
+    "# for memory": 26,
+    "install-github-app": 202,
+    "drag-and-drop-images": 195,
+    "paste-images-mac": 195,
+    "double-esc-code-restore": 195,
+    "continue": 195,
+    "shift-tab": 195,
+    "image-paste": 193,
+    "tab-toggle-thinking": 27,
+    "ultrathink-keyword": 68,
+    "shift-enter": 202,
+    "custom-agents": 198,
+    "permissions": 195,
+    "custom-commands": 195,
+    "default-permission-mode-config": 195,
+    "install-slack-app": 195,
+    "rename-conversation": 197,
+    "config-thinking-mode": 36,
+    "btw-side-question": 36,
+    "desktop-app": 199,
+    "web-app": 199,
+    "mobile-app": 199,
+    "git-worktrees": 195,
+    "guest-passes": 202,
+    "agent-flag": 198,
+    "frontend-design-plugin": 163,
+    "ide-upsell-external-terminal": 190,
+    "overage-promo": 193
+  },
+  "promptQueueUseCount": 121,
+  "respectGitignore": false,
+  "userID": "a02a42274a4843f57896b22c952b07737064c75d50b138d7e4505fc8af7a7e08",
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "2.1.14",
+  "projects": {
+    "/Users/dongming/projects/stockvalue": {
+      "allowedTools": [
+        "Bash(cat:*)",
+        "Bash(make:*)",
+        "Bash(mkdir:*)"
+      ],
+      "context": {},
+      "dontCrawlDirectory": false,
+      "enableArchitectTool": false,
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "approvedMcprcServers": [],
+      "rejectedMcprcServers": [],
+      "hasTrustDialogAccepted": true,
+      "ignorePatterns": [],
+      "hasCompletedProjectOnboarding": true
+    },
+    "/Users/dongming/projects/stockvalue/frontend": {
+      "allowedTools": [],
+      "context": {},
+      "dontCrawlDirectory": false,
+      "enableArchitectTool": false,
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "approvedMcprcServers": [],
+      "rejectedMcprcServers": [],
+      "hasTrustDialogAccepted": false,
+      "ignorePatterns": [],
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 5.362851149999999,
+      "lastAPIDuration": 1170649,
+      "lastDuration": 12020218,
+      "lastSessionId": "064cca92-fac0-4524-a4b4-544500b4588a"
+    },
+    "/Users/dongming/projects/folio": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "ignorePatterns": [],
+      "projectOnboardingSeenCount": 3,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "dash_app.py",
+        "snapshot_service.py",
+        "portfolio_service.py",
+        "shell.py",
+        "portfolio.py"
+      ],
+      "lastTotalWebSearchRequests": 2,
+      "hasCompletedProjectOnboarding": true,
+      "exampleFilesGeneratedAt": 1767646754389,
+      "lastCost": 5.338089900000003,
+      "lastAPIDuration": 1176935,
+      "lastToolDuration": 543953,
+      "lastDuration": 7963126,
+      "lastLinesAdded": 1227,
+      "lastLinesRemoved": 82,
+      "lastTotalInputTokens": 198443,
+      "lastTotalOutputTokens": 54825,
+      "lastTotalCacheCreationInputTokens": 644524,
+      "lastTotalCacheReadInputTokens": 6388968,
+      "lastSessionId": "b90d3ef0-a2c6-4e2a-b3f1-69730c514c0c",
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastAPIDurationWithoutRetries": 1176894,
+      "lastModelUsage": {
+        "claude-sonnet-4-5-20250929": {
+          "inputTokens": 13972,
+          "outputTokens": 51684,
+          "cacheReadInputTokens": 6388968,
+          "cacheCreationInputTokens": 631357,
+          "webSearchRequests": 2,
+          "costUSD": 5.12145515
+        },
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 184471,
+          "outputTokens": 3141,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 13167,
+          "webSearchRequests": 0,
+          "costUSD": 0.21663475
+        }
+      }
+    },
+    "/Users/dongming/projects/forceflow": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 4,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "unusual.py",
+        "profiles.py",
+        "app.py",
+        "polygon_client.py",
+        "duckdb_store.py"
+      ],
+      "exampleFilesGeneratedAt": 1763388587582,
+      "hasCompletedProjectOnboarding": true,
+      "lastTotalWebSearchRequests": 0
+    },
+    "/Users/dongming/projects/sec-13f-filings": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "sec_client.rb",
+        "thirteen_fs_controller.rb",
+        "thirteen_f.rb",
+        "autocomplete.js",
+        "company_cusip_lookup.rb"
+      ],
+      "exampleFilesGeneratedAt": 1763311190863,
+      "hasCompletedProjectOnboarding": true
+    },
+    "/Users/dongming/projects/stock-advisor": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": []
+    },
+    "/Users/dongming/projects/agentalpha": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "mb-analyst-concise.md",
+        "NVDA-Q3FY26-scorecard.md",
+        "AGENTS.md",
+        "CLAUDE.md",
+        ".gitignore"
+      ],
+      "exampleFilesGeneratedAt": 1764777517077,
+      "hasCompletedProjectOnboarding": true,
+      "lastTotalWebSearchRequests": 0,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 0.000755,
+      "lastAPIDuration": 1457,
+      "lastAPIDurationWithoutRetries": 1457,
+      "lastToolDuration": 0,
+      "lastDuration": 3904,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 275,
+      "lastTotalOutputTokens": 96,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 275,
+          "outputTokens": 96,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.000755
+        }
+      },
+      "lastSessionId": "455afad4-a444-4bf2-94f0-951a7f2ecf69"
+    },
+    "/Users/dongming/projects/dming.self": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 1,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "data.ts",
+        "generate_health_profile_refreshed.py",
+        "layout.tsx",
+        "page.tsx",
+        "compare_reports.py"
+      ],
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "exampleFilesGeneratedAt": 1767733254937,
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 0.6773966499999999,
+      "lastAPIDuration": 245951,
+      "lastAPIDurationWithoutRetries": 245939,
+      "lastToolDuration": 81062,
+      "lastDuration": 370107,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 8753,
+      "lastTotalOutputTokens": 9298,
+      "lastTotalCacheCreationInputTokens": 107521,
+      "lastTotalCacheReadInputTokens": 337813,
+      "lastTotalWebSearchRequests": 3,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 8535,
+          "outputTokens": 581,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.01144
+        },
+        "claude-sonnet-4-5-20250929": {
+          "inputTokens": 218,
+          "outputTokens": 8717,
+          "cacheReadInputTokens": 337813,
+          "cacheCreationInputTokens": 107521,
+          "webSearchRequests": 3,
+          "costUSD": 0.6659566499999999
+        }
+      },
+      "lastSessionId": "0a3354ae-fedd-4bbb-8012-3a3ef2f353e4"
+    },
+    "/": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "lastTotalWebSearchRequests": 0,
+      "lastCost": 0.078159,
+      "lastAPIDuration": 11243,
+      "lastToolDuration": 0,
+      "lastDuration": 10107,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 6,
+      "lastTotalOutputTokens": 374,
+      "lastTotalCacheCreationInputTokens": 27340,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastSessionId": "0c6948f7-4f6a-4a99-9924-04f4819a8fb3",
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastAPIDurationWithoutRetries": 11240,
+      "lastModelUsage": {
+        "claude-sonnet-4-5-20250929": {
+          "inputTokens": 4,
+          "outputTokens": 216,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 15976,
+          "webSearchRequests": 0,
+          "costUSD": 0.063162
+        },
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 2,
+          "outputTokens": 158,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 11364,
+          "webSearchRequests": 0,
+          "costUSD": 0.014997
+        }
+      }
+    },
+    "/Users/dongming/.claude": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 1,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 0.1112066,
+      "lastAPIDuration": 59414,
+      "lastAPIDurationWithoutRetries": 59407,
+      "lastToolDuration": 3,
+      "lastDuration": 2526155,
+      "lastLinesAdded": 1,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 8581,
+      "lastTotalOutputTokens": 1899,
+      "lastTotalCacheCreationInputTokens": 11170,
+      "lastTotalCacheReadInputTokens": 116357,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 8518,
+          "outputTokens": 278,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.009907999999999998
+        },
+        "claude-sonnet-4-5-20250929": {
+          "inputTokens": 63,
+          "outputTokens": 1621,
+          "cacheReadInputTokens": 116357,
+          "cacheCreationInputTokens": 11170,
+          "webSearchRequests": 0,
+          "costUSD": 0.10129859999999999
+        }
+      },
+      "lastSessionId": "8a46d86b-798a-4ef5-948f-ba42d63ffebe"
+    },
+    "/Users/dongming": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 0,
+      "lastAPIDuration": 0,
+      "lastAPIDurationWithoutRetries": 0,
+      "lastToolDuration": 0,
+      "lastDuration": 11047,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 0,
+      "lastTotalOutputTokens": 0,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {},
+      "lastSessionId": "b232d30e-fe5d-4352-941a-7fc72a28e2d1",
+      "lastFpsAverage": 2.82,
+      "lastFpsLow1Pct": 197.26,
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 29,
+        "frame_duration_ms_min": 0.06274999999914144,
+        "frame_duration_ms_max": 5.0694579999999405,
+        "frame_duration_ms_avg": 1.6736020344827458,
+        "frame_duration_ms_p50": 1.330000000000382,
+        "frame_duration_ms_p95": 4.566775200000119,
+        "frame_duration_ms_p99": 4.954541520000021
+      }
+    },
+    "/Users/dongming/projects/dot-agents": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 4,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 5.930515500000003,
+      "lastAPIDuration": 1016827,
+      "lastAPIDurationWithoutRetries": 1016428,
+      "lastToolDuration": 383154,
+      "lastDuration": 381328067,
+      "lastLinesAdded": 547,
+      "lastLinesRemoved": 248,
+      "lastTotalInputTokens": 255013,
+      "lastTotalOutputTokens": 50956,
+      "lastTotalCacheCreationInputTokens": 458736,
+      "lastTotalCacheReadInputTokens": 3490621,
+      "lastTotalWebSearchRequests": 1,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 253925,
+          "outputTokens": 7547,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 14844,
+          "webSearchRequests": 1,
+          "costUSD": 0.32021500000000014
+        },
+        "claude-sonnet-4-5-20250929": {
+          "inputTokens": 557,
+          "outputTokens": 41843,
+          "cacheReadInputTokens": 3126760,
+          "cacheCreationInputTokens": 295752,
+          "webSearchRequests": 0,
+          "costUSD": 4.4606900000000005
+        },
+        "claude-opus-4-6": {
+          "inputTokens": 531,
+          "outputTokens": 1566,
+          "cacheReadInputTokens": 363861,
+          "cacheCreationInputTokens": 148140,
+          "webSearchRequests": 0,
+          "costUSD": 1.1496105
+        }
+      },
+      "lastSessionId": "c206eb9d-fd28-4b20-bd04-60b3d9342b75",
+      "lastFpsAverage": 2.95,
+      "lastFpsLow1Pct": 124.03
+    },
+    "/Users/dongming/projects/mingdom-capital": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "cli.py",
+        "build_report.py",
+        "page.tsx",
+        "test_cli.py",
+        "shell.py"
+      ],
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "exampleFilesGeneratedAt": 1767902244935,
+      "hasCompletedProjectOnboarding": true
+    },
+    "/Users/dongming/projects/capfolio": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 19.78997125000001,
+      "lastAPIDuration": 3233921,
+      "lastAPIDurationWithoutRetries": 3231382,
+      "lastToolDuration": 3266024,
+      "lastDuration": 34360860,
+      "lastLinesAdded": 629,
+      "lastLinesRemoved": 35,
+      "lastTotalInputTokens": 145842,
+      "lastTotalOutputTokens": 111874,
+      "lastTotalCacheCreationInputTokens": 804761,
+      "lastTotalCacheReadInputTokens": 26910606,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 143618,
+          "outputTokens": 11314,
+          "cacheReadInputTokens": 330590,
+          "cacheCreationInputTokens": 257632,
+          "webSearchRequests": 0,
+          "costUSD": 0.5552870000000003
+        },
+        "claude-sonnet-4-5-20250929": {
+          "inputTokens": 2224,
+          "outputTokens": 100560,
+          "cacheReadInputTokens": 26580016,
+          "cacheCreationInputTokens": 547129,
+          "webSearchRequests": 0,
+          "costUSD": 19.234684249999997
+        }
+      },
+      "lastSessionId": "571e0884-f246-47d7-8f92-7f244d133491",
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "config.py",
+        "optimizer.py"
+      ],
+      "exampleFilesGeneratedAt": 1770855822358,
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 100,
+        "frame_duration_ms_min": 0.10354200000000446,
+        "frame_duration_ms_max": 3.45575000000008,
+        "frame_duration_ms_avg": 0.8561433700001225,
+        "frame_duration_ms_p50": 0.7154790000013236,
+        "frame_duration_ms_p95": 1.409095499999057,
+        "frame_duration_ms_p99": 3.4015069100000015
+      }
+    },
+    "/Users/dongming/projects/dongming.me": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "Layout.astro",
+        "index.astro",
+        "global.css",
+        "search.astro",
+        "[...id].astro"
+      ],
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "exampleFilesGeneratedAt": 1768187749229,
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 1.3932616,
+      "lastAPIDuration": 281434,
+      "lastAPIDurationWithoutRetries": 281420,
+      "lastToolDuration": 173816,
+      "lastDuration": 51051248,
+      "lastLinesAdded": 246,
+      "lastLinesRemoved": 4,
+      "lastTotalInputTokens": 194159,
+      "lastTotalOutputTokens": 17406,
+      "lastTotalCacheCreationInputTokens": 186962,
+      "lastTotalCacheReadInputTokens": 909390,
+      "lastTotalWebSearchRequests": 3,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 182678,
+          "outputTokens": 9092,
+          "cacheReadInputTokens": 573986,
+          "cacheCreationInputTokens": 95200,
+          "webSearchRequests": 0,
+          "costUSD": 0.40453660000000013
+        },
+        "claude-sonnet-4-5-20250929": {
+          "inputTokens": 6,
+          "outputTokens": 311,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 17849,
+          "webSearchRequests": 0,
+          "costUSD": 0.07161675
+        },
+        "claude-opus-4-5-20251101": {
+          "inputTokens": 11475,
+          "outputTokens": 8003,
+          "cacheReadInputTokens": 335404,
+          "cacheCreationInputTokens": 73913,
+          "webSearchRequests": 3,
+          "costUSD": 0.9171082500000001
+        }
+      },
+      "lastSessionId": "579c3bed-faae-472c-9f6f-56224af61155"
+    },
+    "/Users/dongming/.dotfiles": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 33,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 0.00048499999999999997,
+      "lastAPIDuration": 645,
+      "lastAPIDurationWithoutRetries": 645,
+      "lastToolDuration": 0,
+      "lastDuration": 24802,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 355,
+      "lastTotalOutputTokens": 26,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 355,
+          "outputTokens": 26,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.00048499999999999997
+        }
+      },
+      "lastSessionId": "73a156cc-f8d4-4f5e-884d-867d49f6466b",
+      "hasCompletedProjectOnboarding": true
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/puebla": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "charter_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1769127103329
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/olympia": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "charter_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1769133028545
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/vienna": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "backtest_cli.py",
+        "lake_reader.py",
+        "optimizer.py"
+      ],
+      "exampleFilesGeneratedAt": 1769183320121
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/tehran": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "rating_cli.py",
+        "lake_reader.py",
+        "optimizer.py"
+      ],
+      "exampleFilesGeneratedAt": 1769207770306,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 2.6992637499999996,
+      "lastAPIDuration": 400793,
+      "lastAPIDurationWithoutRetries": 398365,
+      "lastToolDuration": 196903,
+      "lastDuration": 1337835,
+      "lastLinesAdded": 82,
+      "lastLinesRemoved": 30,
+      "lastTotalInputTokens": 22349,
+      "lastTotalOutputTokens": 21039,
+      "lastTotalCacheCreationInputTokens": 159319,
+      "lastTotalCacheReadInputTokens": 2168200,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 4205,
+          "outputTokens": 74,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.004575
+        },
+        "claude-opus-4-5-20251101": {
+          "inputTokens": 18144,
+          "outputTokens": 20965,
+          "cacheReadInputTokens": 2168200,
+          "cacheCreationInputTokens": 159319,
+          "webSearchRequests": 0,
+          "costUSD": 2.69468875
+        }
+      },
+      "lastSessionId": "f7caf0fe-8dfc-4a17-add5-4022e1feaaff"
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/paris": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "ingestion.py"
+      ],
+      "exampleFilesGeneratedAt": 1769211250656
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/santo-domingo": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "ingestion.py"
+      ],
+      "exampleFilesGeneratedAt": 1769211745520
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/riyadh-v1": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "rating_cli.py",
+        "lake_reader.py",
+        "optimizer.py"
+      ],
+      "exampleFilesGeneratedAt": 1769213144446
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/edinburgh": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "ingestion.py"
+      ],
+      "exampleFilesGeneratedAt": 1769215008449,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 0.044525999999999996,
+      "lastAPIDuration": 9603,
+      "lastAPIDurationWithoutRetries": 9600,
+      "lastToolDuration": 0,
+      "lastDuration": 18859,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 43981,
+      "lastTotalOutputTokens": 109,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 43981,
+          "outputTokens": 109,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.044525999999999996
+        }
+      },
+      "lastSessionId": "f83b1ddf-47e9-45e3-9c96-572b02a049d3",
+      "hasCompletedProjectOnboarding": true
+    },
+    "/Users/dongming/Library/Application Support/CodexBar/ClaudeProbe": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 1,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 0,
+      "lastAPIDuration": 0,
+      "lastAPIDurationWithoutRetries": 0,
+      "lastToolDuration": 0,
+      "lastDuration": 28116,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 0,
+      "lastTotalOutputTokens": 0,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {},
+      "lastSessionId": "32cbb6fc-cae8-49a8-ab44-5fc116fbbbf7"
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/jakarta": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1769296680560
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/davao": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1769387537645,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 0.031547,
+      "lastAPIDuration": 5714,
+      "lastAPIDurationWithoutRetries": 5713,
+      "lastToolDuration": 0,
+      "lastDuration": 39619,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 31172,
+      "lastTotalOutputTokens": 75,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 31172,
+          "outputTokens": 75,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.031547
+        }
+      },
+      "lastSessionId": "3e1fa9c1-e6cb-4634-b751-df4e31b41f81"
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/porto": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "backtest_cli.py",
+        "optimizer.py",
+        "lake_reader.py"
+      ],
+      "exampleFilesGeneratedAt": 1769469682070,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 0.02107,
+      "lastAPIDuration": 3583,
+      "lastAPIDurationWithoutRetries": 3583,
+      "lastToolDuration": 0,
+      "lastDuration": 10941,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 20810,
+      "lastTotalOutputTokens": 52,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 20810,
+          "outputTokens": 52,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.02107
+        }
+      },
+      "lastSessionId": "685c4a0d-9743-4dbd-b637-07ab9843b955"
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/luxembourg": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "backtest_cli.py",
+        "optimizer.py",
+        "lake_reader.py"
+      ],
+      "exampleFilesGeneratedAt": 1769475851935
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/oslo": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "config.py"
+      ],
+      "exampleFilesGeneratedAt": 1769527334534,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 0.01418225,
+      "lastAPIDuration": 3109,
+      "lastAPIDurationWithoutRetries": 3107,
+      "lastToolDuration": 0,
+      "lastDuration": 14276924,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 6,
+      "lastTotalOutputTokens": 22,
+      "lastTotalCacheCreationInputTokens": 11253,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 0.32,
+      "lastFpsLow1Pct": 915.26,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 6,
+          "outputTokens": 22,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 11253,
+          "webSearchRequests": 0,
+          "costUSD": 0.01418225
+        }
+      },
+      "lastSessionId": "39e8950d-0384-4ed1-89af-a348a3c1caa6"
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/miami": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "config.py"
+      ],
+      "exampleFilesGeneratedAt": 1769538849414
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/biarritz": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1769547872864,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 0.0136225,
+      "lastAPIDuration": 4851,
+      "lastAPIDurationWithoutRetries": 4848,
+      "lastToolDuration": 0,
+      "lastDuration": 47789420,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 7935,
+      "lastTotalOutputTokens": 52,
+      "lastTotalCacheCreationInputTokens": 4342,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 9.91,
+      "lastFpsLow1Pct": 875.69,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 7935,
+          "outputTokens": 52,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 4342,
+          "webSearchRequests": 0,
+          "costUSD": 0.0136225
+        }
+      },
+      "lastSessionId": "18676ae2-fb9e-4b8b-9adb-bab9f1d3ddaa"
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/nashville": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "backtest_cli.py",
+        "lake_reader.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1769606797201,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 0.03968225,
+      "lastAPIDuration": 6100,
+      "lastAPIDurationWithoutRetries": 6097,
+      "lastToolDuration": 0,
+      "lastDuration": 9793,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 3591,
+      "lastTotalOutputTokens": 69,
+      "lastTotalCacheCreationInputTokens": 28597,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 9.59,
+      "lastFpsLow1Pct": 265.94,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 3591,
+          "outputTokens": 69,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 28597,
+          "webSearchRequests": 0,
+          "costUSD": 0.03968225
+        }
+      },
+      "lastSessionId": "c0a6eb27-4b55-4d06-9fd7-3b26f66b8ccf"
+    },
+    "/Users/dongming/.local/share/capfolio/state/logs/slowdiag-bundle-20260128-082303": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 1,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "disabledMcpServers": [
+        "plugin:context7:context7"
+      ],
+      "lastCost": 0,
+      "lastAPIDuration": 0,
+      "lastAPIDurationWithoutRetries": 0,
+      "lastToolDuration": 0,
+      "lastDuration": 68821,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 0,
+      "lastTotalOutputTokens": 0,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 11.11,
+      "lastFpsLow1Pct": 130.87,
+      "lastModelUsage": {},
+      "lastSessionId": "02d8d2f1-2e19-420e-9a8e-d48e0f5d86f6"
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/sun-valley": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1769624171210
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/vatican": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1769633780375
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/stuttgart": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1769745990566,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 0.026994999999999998,
+      "lastAPIDuration": 4668,
+      "lastAPIDurationWithoutRetries": 4667,
+      "lastToolDuration": 0,
+      "lastDuration": 392525,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 4360,
+      "lastTotalOutputTokens": 58,
+      "lastTotalCacheCreationInputTokens": 17876,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 0.4,
+      "lastFpsLow1Pct": 298.19,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 4360,
+          "outputTokens": 58,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 17876,
+          "webSearchRequests": 0,
+          "costUSD": 0.026994999999999998
+        }
+      },
+      "lastSessionId": "61ba9da1-60fa-4244-b18b-2f48d166d4bd"
+    },
+    "/Users/dongming/projects/xugao.xyz": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 15,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "UnlockGate.tsx",
+        "import-photos.ts",
+        "config.ts",
+        "astro.config.mjs",
+        "package.json"
+      ],
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "exampleFilesGeneratedAt": 1769786837064,
+      "lastCost": 6.209779849999997,
+      "lastAPIDuration": 1620484,
+      "lastAPIDurationWithoutRetries": 1620339,
+      "lastToolDuration": 90262,
+      "lastDuration": 353958566,
+      "lastLinesAdded": 1138,
+      "lastLinesRemoved": 148,
+      "lastTotalInputTokens": 37429,
+      "lastTotalOutputTokens": 74834,
+      "lastTotalCacheCreationInputTokens": 215105,
+      "lastTotalCacheReadInputTokens": 14180997,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 33020,
+          "outputTokens": 1992,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.04297999999999999
+        },
+        "claude-sonnet-4-5-20250929": {
+          "inputTokens": 4409,
+          "outputTokens": 72842,
+          "cacheReadInputTokens": 14180997,
+          "cacheCreationInputTokens": 215105,
+          "webSearchRequests": 0,
+          "costUSD": 6.166799849999998
+        }
+      },
+      "lastSessionId": "e1df7d81-d2b4-445f-b470-275695e5a000",
+      "hasCompletedProjectOnboarding": true,
+      "lastFpsAverage": 1.23,
+      "lastFpsLow1Pct": 49.99
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/salvador": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770051088920
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/los-angeles": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770053352359
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/madison": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770062281138
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/houston": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770077238160
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/san-diego": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770082917613
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/paris-v1": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "config.py"
+      ],
+      "exampleFilesGeneratedAt": 1770090997073
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/lagos": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770146932444
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/zagreb": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770176375076
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/amman": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "config.py"
+      ],
+      "exampleFilesGeneratedAt": 1770244871803
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/victoria": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "config.py"
+      ],
+      "exampleFilesGeneratedAt": 1770246039418
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/cape-town": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "config.py"
+      ],
+      "exampleFilesGeneratedAt": 1770263670441
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/seattle": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "config.py"
+      ],
+      "exampleFilesGeneratedAt": 1770301152275
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/columbia": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "config.py"
+      ],
+      "exampleFilesGeneratedAt": 1770303445059
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/pattaya": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770306993767
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/moscow": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770311911124
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/montreal": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770313035567
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/valencia": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "config.py"
+      ],
+      "exampleFilesGeneratedAt": 1770313690306
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/washington": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770313758011
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/florence": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770315309755
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/sofia": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770316590170
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/douala": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770322878344
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/lisbon": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770328487638
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/bogota": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "config.py"
+      ],
+      "exampleFilesGeneratedAt": 1770351103963
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/san-antonio": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770398260983,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 0,
+      "lastAPIDuration": 0,
+      "lastAPIDurationWithoutRetries": 0,
+      "lastToolDuration": 0,
+      "lastDuration": 430388233,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 0,
+      "lastTotalOutputTokens": 0,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {},
+      "lastSessionId": "f9b90731-0041-4129-a426-f4e3151f1bc5",
+      "lastFpsAverage": 0,
+      "lastFpsLow1Pct": 259.15
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/cambridge": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770421318991
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/monterrey": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770421325313
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/dar-es-salaam": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770428311827
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/honolulu": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770436467260
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/salvador-v1": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770473668366
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/budapest": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770480596353
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/guangzhou": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770488714891
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/nashville-v1": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770490167300
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/carthage": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770514930828
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/spokane": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770517786044
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/singapore": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770522369667
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/lagos-v1": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "monitor_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770598464922
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/kathmandu": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770608853994
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/memphis": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770669126860
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/beirut": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770738314507
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/abu-dhabi": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "optimizer.py",
+        "lake_reader.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770740108516,
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 0,
+      "lastAPIDuration": 0,
+      "lastAPIDurationWithoutRetries": 0,
+      "lastToolDuration": 0,
+      "lastDuration": 900476,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 0,
+      "lastTotalOutputTokens": 0,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 0.05,
+      "lastFpsLow1Pct": 221.35,
+      "lastModelUsage": {},
+      "lastSessionId": "f4e0cd4a-9443-40a1-8bf2-014027cf9fd0"
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/davis": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "config.py",
+        "lake_reader.py",
+        "optimizer.py"
+      ],
+      "exampleFilesGeneratedAt": 1770780014085
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/el-paso": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "config.py",
+        "lake_reader.py",
+        "optimizer.py"
+      ],
+      "exampleFilesGeneratedAt": 1770792698403
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/bucharest": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "matrix_service.py"
+      ],
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 0,
+      "lastAPIDuration": 0,
+      "lastAPIDurationWithoutRetries": 0,
+      "lastToolDuration": 0,
+      "lastDuration": 12723,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 0,
+      "lastTotalOutputTokens": 0,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 1.06,
+      "lastFpsLow1Pct": 342.27,
+      "lastModelUsage": {},
+      "lastSessionId": "fd603fe6-92ab-4bab-b9b7-bfb8784c4afa",
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 13,
+        "frame_duration_ms_min": 0.07683299999916926,
+        "frame_duration_ms_max": 2.9216669999999567,
+        "frame_duration_ms_avg": 0.8806249999997686,
+        "frame_duration_ms_p50": 0.8323339999999462,
+        "frame_duration_ms_p95": 2.093066399999973,
+        "frame_duration_ms_p99": 2.755946879999959
+      },
+      "exampleFilesGeneratedAt": 1770823217465
+    },
+    "/Users/dongming/conductor/workspaces/capfolio/lima": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "main.py",
+        "rating_service.py",
+        "lake_reader.py",
+        "optimizer.py",
+        "matrix_service.py"
+      ],
+      "exampleFilesGeneratedAt": 1770878363285
+    },
+    "/Users/dongming/projects/dming.system": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "hasCompletedProjectOnboarding": true
+    }
+  },
+  "doctorShownAtSession": 0,
+  "shiftEnterKeyBindingInstalled": true,
+  "hasAcknowledgedCostThreshold": true,
+  "firstStartTime": "2025-11-05T16:23:42.667Z",
+  "sonnet45MigrationComplete": true,
+  "changelogLastFetched": 1770868485287,
+  "s1mNonSubscriberAccessCache": {
+    "aa720964-df4c-4060-9916-a6bf42f17cd1": {
+      "hasAccess": false,
+      "timestamp": 1762359823161
+    }
+  },
+  "hasOpusPlanDefault": false,
+  "lastReleaseNotesSeen": "2.1.39",
+  "hasIdeOnboardingBeenShown": {
+    "vscode": true
+  },
+  "subscriptionNoticeCount": 0,
+  "hasAvailableSubscription": false,
+  "claudeCodeFirstTokenDate": "2025-11-05T16:25:13.907528Z",
+  "fallbackAvailableWarningThreshold": 0.5,
+  "lastPlanModeUse": 1770300525805,
+  "s1mAccessCache": {
+    "ee3ef71d-c33d-4b53-a787-f6c78de5cd94": {
+      "hasAccess": false,
+      "hasAccessNotAsDefault": false,
+      "timestamp": 1770908090976
+    }
+  },
+  "feedbackSurveyState": {
+    "lastShownTime": 1770153086598
+  },
+  "githubRepoPaths": {
+    "mingdom/folio": [
+      "/Users/dongming/projects/folio"
+    ],
+    "mingdom/agentalpha": [
+      "/Users/dongming/projects/agentalpha"
+    ],
+    "d3ming/dot-agents": [
+      "/Users/dongming/projects/dot-agents/codex/.codex/rules",
+      "/Users/dongming/projects/dot-agents"
+    ],
+    "mingdom/capital": [
+      "/Users/dongming/projects/mingdom-capital"
+    ],
+    "d3ming/capfolio": [
+      "/Users/dongming/conductor/workspaces/capfolio/stuttgart",
+      "/Users/dongming/conductor/workspaces/capfolio/nashville",
+      "/Users/dongming/conductor/workspaces/capfolio/biarritz",
+      "/Users/dongming/conductor/workspaces/capfolio/oslo",
+      "/Users/dongming/conductor/workspaces/capfolio/porto",
+      "/Users/dongming/conductor/workspaces/capfolio/davao",
+      "/Users/dongming/conductor/workspaces/capfolio/edinburgh",
+      "/Users/dongming/conductor/workspaces/capfolio/tehran",
+      "/Users/dongming/projects/capfolio"
+    ],
+    "d3ming/dongming.me": [
+      "/Users/dongming/projects/dongming.me"
+    ],
+    "d3ming/dotfiles-holman": [
+      "/Users/dongming/.dotfiles"
+    ],
+    "d3ming/xugao.xyz": [
+      "/Users/dongming/projects/xugao.xyz"
+    ]
+  },
+  "opus45MigrationComplete": true,
+  "hasShownOpus45Notice": {
+    "ee3ef71d-c33d-4b53-a787-f6c78de5cd94": true,
+    "aa720964-df4c-4060-9916-a6bf42f17cd1": true
+  },
+  "thinkingMigrationComplete": true,
+  "officialMarketplaceAutoInstallAttempted": true,
+  "officialMarketplaceAutoInstalled": true,
+  "skillUsage": {
+    "frontend-design": {
+      "usageCount": 2,
+      "lastUsedAt": 1769788357596
+    },
+    "init": {
+      "usageCount": 3,
+      "lastUsedAt": 1769787794795
+    },
+    "retrospective-writer": {
+      "usageCount": 5,
+      "lastUsedAt": 1769397110620
+    },
+    "task-planning": {
+      "usageCount": 6,
+      "lastUsedAt": 1770394638834
+    },
+    "pr-review-toolkit:review-pr": {
+      "usageCount": 30,
+      "lastUsedAt": 1770871367848
+    },
+    "git-commit": {
+      "usageCount": 12,
+      "lastUsedAt": 1770662300201
+    },
+    "code-simplifier": {
+      "usageCount": 4,
+      "lastUsedAt": 1770261263183
+    },
+    "review": {
+      "usageCount": 1,
+      "lastUsedAt": 1769128139786
+    },
+    "code-review:code-review": {
+      "usageCount": 2,
+      "lastUsedAt": 1769210071677
+    },
+    "pr-comments": {
+      "usageCount": 4,
+      "lastUsedAt": 1770919275653
+    },
+    "skill-author": {
+      "usageCount": 2,
+      "lastUsedAt": 1770781524111
+    },
+    "commit-commands:commit-push-pr": {
+      "usageCount": 7,
+      "lastUsedAt": 1770661319923
+    },
+    "statusline": {
+      "usageCount": 3,
+      "lastUsedAt": 1770486989904
+    },
+    "gh:review-pr": {
+      "usageCount": 3,
+      "lastUsedAt": 1770849269900
+    },
+    "beast_mode": {
+      "usageCount": 5,
+      "lastUsedAt": 1770881084861
+    },
+    "learning-logs": {
+      "usageCount": 1,
+      "lastUsedAt": 1770821428608
+    }
+  },
+  "opusProMigrationComplete": true,
+  "opusProMigrationTimestamp": 1768428894947,
+  "cachedChromeExtensionInstalled": false,
+  "passesEligibilityCache": {
+    "ee3ef71d-c33d-4b53-a787-f6c78de5cd94": {
+      "eligible": true,
+      "referral_code_details": {
+        "code": "Wk35LcNJbQ",
+        "campaign": "claude_code_guest_pass_a47c",
+        "referral_link": "https://claude.ai/referral/Wk35LcNJbQ"
+      },
+      "referrer_reward": {
+        "amount_minor_units": 5000,
+        "currency": "USD"
+      },
+      "remaining_passes": 0,
+      "timestamp": 1770917743406
+    }
+  },
+  "passesUpsellSeenCount": 4,
+  "hasVisitedPasses": false,
+  "autoUpdatesProtectedForNative": true,
+  "claudeInChromeDefaultEnabled": false,
+  "passesLastSeenRemaining": 3,
+  "hasShownOpus46Notice": {
+    "ee3ef71d-c33d-4b53-a787-f6c78de5cd94": true
+  },
+  "penguinModeOrgEnabled": true,
+  "showSpinnerTree": false,
+  "opus46FeedSeenCount": 4,
+  "hasVisitedExtraUsage": true,
+  "oauthAccount": {
+    "accountUuid": "d5d1b60d-b51a-49e0-989e-d6b845286df7",
+    "emailAddress": "d3ming@gmail.com",
+    "organizationUuid": "ee3ef71d-c33d-4b53-a787-f6c78de5cd94",
+    "hasExtraUsageEnabled": true,
+    "billingType": "stripe_subscription",
+    "accountCreatedAt": "2023-10-16T17:19:51.702505Z",
+    "subscriptionCreatedAt": "2024-03-28T17:11:44.251342Z",
+    "displayName": "Mingdom"
+  }
+}

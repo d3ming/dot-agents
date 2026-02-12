@@ -37,8 +37,9 @@ echo "✅ Stow found"
 echo ""
 
 # Idempotency check: See if .claude is already a symlink pointing to this repo
-if [ -L ~/.claude ] && [[ $(readlink ~/.claude) == *"/claude/.claude" ]]; then
-    echo "✅ ~/.claude is already stowed. Skipping archive & restore steps."
+if [ -L ~/.claude ] && [[ $(readlink ~/.claude) == *"/claude/.claude" ]] && \
+   [ -L ~/.claude.json ] && [[ $(readlink ~/.claude.json) == *"/home/.claude.json" ]]; then
+    echo "✅ ~/.claude and ~/.claude.json are already stowed. Skipping archive & restore steps."
     SKIP_ARCHIVE=true
 else
     SKIP_ARCHIVE=false
@@ -49,7 +50,7 @@ if [ "$SKIP_ARCHIVE" = false ]; then
     cd "$PROJECT_DIR"
     
     # Try stow in dry-run mode. If it fails, we have conflicts.
-    if ! stow -n -v -t ~ claude codex 2>/dev/null; then
+    if ! stow -n -v -t ~ home claude codex 2>/dev/null; then
         echo ""
         echo "⚠️  Conflicts detected. Existing dirs need to be moved first."
         echo ""
@@ -63,6 +64,11 @@ if [ "$SKIP_ARCHIVE" = false ]; then
         # Move to archive
         ARCHIVE_DIR="$PROJECT_DIR/archive/pre-stow-$(date +%Y%m%d-%H%M%S)"
         mkdir -p "$ARCHIVE_DIR"
+
+        if [ -e ~/.claude.json ]; then
+            mv ~/.claude.json "$ARCHIVE_DIR/.claude.json"
+            echo "📦 ~/.claude.json → $ARCHIVE_DIR/.claude.json"
+        fi
 
         if [ -e ~/.claude ]; then
             mv ~/.claude "$ARCHIVE_DIR/claude"
@@ -89,10 +95,10 @@ else
     SHOULD_RESTORE=false
 fi
 
-# Real stow (claude & codex only)
+# Real stow (home-level dotfiles, claude & codex)
 echo "🔗 Installing symlinks..."
 cd "$PROJECT_DIR"
-stow -v -t ~ claude codex
+stow -v -t ~ home claude codex
 
 # Gemini setup (symlink core config files; keep runtime dirs writable)
 echo "📂 Configuring gemini..."
