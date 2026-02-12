@@ -1,5 +1,5 @@
 {
-  "numStartups": 204,
+  "numStartups": 205,
   "installMethod": "native",
   "autoUpdates": false,
   "verbose": true,
@@ -17,20 +17,20 @@
     "todo-list": 191,
     "# for memory": 26,
     "install-github-app": 202,
-    "drag-and-drop-images": 195,
-    "paste-images-mac": 195,
-    "double-esc-code-restore": 195,
-    "continue": 195,
-    "shift-tab": 195,
+    "drag-and-drop-images": 205,
+    "paste-images-mac": 205,
+    "double-esc-code-restore": 205,
+    "continue": 205,
+    "shift-tab": 205,
     "image-paste": 193,
     "tab-toggle-thinking": 27,
     "ultrathink-keyword": 68,
     "shift-enter": 202,
     "custom-agents": 198,
-    "permissions": 195,
+    "permissions": 205,
     "custom-commands": 195,
-    "default-permission-mode-config": 195,
-    "install-slack-app": 195,
+    "default-permission-mode-config": 205,
+    "install-slack-app": 205,
     "rename-conversation": 197,
     "config-thinking-mode": 36,
     "btw-side-question": 36,
@@ -38,15 +38,65 @@
     "web-app": 199,
     "mobile-app": 199,
     "git-worktrees": 195,
-    "guest-passes": 202,
+    "guest-passes": 205,
     "agent-flag": 198,
     "frontend-design-plugin": 163,
     "ide-upsell-external-terminal": 190,
     "overage-promo": 193
   },
   "promptQueueUseCount": 121,
+  "cachedGrowthBookFeatures": {
+    "tengu_mcp_tool_search": true,
+    "tengu_scratch": false,
+    "tengu_disable_bypass_permissions_mode": false,
+    "tengu_1p_event_batch_config": {
+      "scheduledDelayMillis": 5000,
+      "maxExportBatchSize": 200,
+      "maxQueueSize": 8192
+    },
+    "tengu_event_sampling_config": {},
+    "tengu_log_segment_events": false,
+    "tengu_log_datadog_events": true,
+    "tengu_marble_anvil": true,
+    "tengu_tool_pear": false,
+    "tengu_scarf_coffee": false,
+    "tengu_pid_based_version_locking": true,
+    "tengu_oboe": true,
+    "tengu_keybinding_customization_release": true,
+    "tengu_penguins_enabled": true,
+    "tengu_thinkback": false,
+    "tengu_chomp_inflection": true,
+    "tengu_penguins_off": null,
+    "tengu_mcp_elicitation": false,
+    "tengu_silver_lantern": true,
+    "tengu-top-of-feed-tip": {
+      "tip": "",
+      "color": ""
+    },
+    "tengu_code_diff_cli": true,
+    "tengu_pr_status_cli": true,
+    "tengu_post_compact_survey": false,
+    "tengu_copper_lantern": true,
+    "tengu_claudeai_mcp_connectors": true,
+    "tengu_tool_search_unsupported_models": [
+      "haiku"
+    ],
+    "tengu_tst_kx7": false,
+    "tengu_plan_mode_interview_phase": false,
+    "tengu_tst_names_in_messages": false,
+    "tengu_snippet_save": false,
+    "enhanced_telemetry_beta": false,
+    "tengu_vinteuil_phrase": true,
+    "tengu_system_prompt_global_cache": true,
+    "tengu_attribution_header": true,
+    "tengu_coral_fern": false,
+    "tengu_cache_plum_violet": true,
+    "tengu_streaming_tool_execution2": true,
+    "tengu_bergotte_lantern": false,
+    "tengu_cork_m4q": true
+  },
   "respectGitignore": false,
-  "userID": "a02a42274a4843f57896b22c952b07737064c75d50b138d7e4505fc8af7a7e08",
+  "userID": "6172e472a2691bb49b73c74eaecdb4c00befd7866e9058f1b0b2d555310a6890",
   "hasCompletedOnboarding": true,
   "lastOnboardingVersion": "2.1.14",
   "projects": {
@@ -555,37 +605,20 @@
         "packageManager": null
       },
       "hasCompletedProjectOnboarding": true,
-      "lastCost": 19.78997125000001,
-      "lastAPIDuration": 3233921,
-      "lastAPIDurationWithoutRetries": 3231382,
-      "lastToolDuration": 3266024,
-      "lastDuration": 34360860,
-      "lastLinesAdded": 629,
-      "lastLinesRemoved": 35,
-      "lastTotalInputTokens": 145842,
-      "lastTotalOutputTokens": 111874,
-      "lastTotalCacheCreationInputTokens": 804761,
-      "lastTotalCacheReadInputTokens": 26910606,
+      "lastCost": 0,
+      "lastAPIDuration": 0,
+      "lastAPIDurationWithoutRetries": 0,
+      "lastToolDuration": 0,
+      "lastDuration": 5587,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 0,
+      "lastTotalOutputTokens": 0,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
       "lastTotalWebSearchRequests": 0,
-      "lastModelUsage": {
-        "claude-haiku-4-5-20251001": {
-          "inputTokens": 143618,
-          "outputTokens": 11314,
-          "cacheReadInputTokens": 330590,
-          "cacheCreationInputTokens": 257632,
-          "webSearchRequests": 0,
-          "costUSD": 0.5552870000000003
-        },
-        "claude-sonnet-4-5-20250929": {
-          "inputTokens": 2224,
-          "outputTokens": 100560,
-          "cacheReadInputTokens": 26580016,
-          "cacheCreationInputTokens": 547129,
-          "webSearchRequests": 0,
-          "costUSD": 19.234684249999997
-        }
-      },
-      "lastSessionId": "571e0884-f246-47d7-8f92-7f244d133491",
+      "lastModelUsage": {},
+      "lastSessionId": "6e5224a6-4961-43b5-9197-200cc32d3af4",
       "exampleFiles": [
         "main.py",
         "rating_service.py",
@@ -595,13 +628,13 @@
       ],
       "exampleFilesGeneratedAt": 1770855822358,
       "lastSessionMetrics": {
-        "frame_duration_ms_count": 100,
-        "frame_duration_ms_min": 0.10354200000000446,
-        "frame_duration_ms_max": 3.45575000000008,
-        "frame_duration_ms_avg": 0.8561433700001225,
-        "frame_duration_ms_p50": 0.7154790000013236,
-        "frame_duration_ms_p95": 1.409095499999057,
-        "frame_duration_ms_p99": 3.4015069100000015
+        "frame_duration_ms_count": 157030,
+        "frame_duration_ms_min": 0.050165999913588166,
+        "frame_duration_ms_max": 270.19316700007766,
+        "frame_duration_ms_avg": 4.44627012802755,
+        "frame_duration_ms_p50": 1.9619790017604828,
+        "frame_duration_ms_p95": 9.166083950130268,
+        "frame_duration_ms_p99": 59.578451429828995
       }
     },
     "/Users/dongming/projects/dongming.me": {
@@ -2411,7 +2444,7 @@
     "ee3ef71d-c33d-4b53-a787-f6c78de5cd94": {
       "hasAccess": false,
       "hasAccessNotAsDefault": false,
-      "timestamp": 1770908090976
+      "timestamp": 1770922417644
     }
   },
   "feedbackSurveyState": {
@@ -2478,8 +2511,8 @@
       "lastUsedAt": 1770394638834
     },
     "pr-review-toolkit:review-pr": {
-      "usageCount": 30,
-      "lastUsedAt": 1770871367848
+      "usageCount": 31,
+      "lastUsedAt": 1770923314998
     },
     "git-commit": {
       "usageCount": 12,
@@ -2542,7 +2575,7 @@
         "currency": "USD"
       },
       "remaining_passes": 0,
-      "timestamp": 1770917743406
+      "timestamp": 1770922418469
     }
   },
   "passesUpsellSeenCount": 4,
@@ -2566,5 +2599,15 @@
     "accountCreatedAt": "2023-10-16T17:19:51.702505Z",
     "subscriptionCreatedAt": "2024-03-28T17:11:44.251342Z",
     "displayName": "Mingdom"
+  },
+  "clientDataCache": {
+    "data": {},
+    "timestamp": 1770922478105
+  },
+  "groveConfigCache": {
+    "d5d1b60d-b51a-49e0-989e-d6b845286df7": {
+      "grove_enabled": true,
+      "timestamp": 1770922417709
+    }
   }
 }
